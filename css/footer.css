@@ -1,30 +1,30 @@
 /*font-family: 'Crimson Text', serif;
 font-family: 'Open Sans', sans-serif;*/
 section #Catagories{
-	margin:10px;
-	color:#55585D;
+	margin-left:30px;
+	color:#a6a6a6;
 	font-weight:bold;
-	font-size:12px;
+	font-size:20px;
 	font-family: 'Crimson Text', serif;
 }
 #insta{
-	margin:10px;
-	color:#55585D;
+	margin-left:30px;
+	color:#a6a6a6;
 	font-weight:bold;
-	font-size:12px;
+	font-size:20px;
 	font-family: 'Crimson Text', serif;
 
 }
 section #Popular_Posts{
-	margin:10px;
-	color:#55585D;
+	margin-left:30px;
+	color:#a6a6a6;
 	font-weight:bold;
-	font-size:12px;
+	font-size:20px;
 	font-family: 'Crimson Text', serif;
 }
 
 section p{
-	font-size:12px;
+	font-size:15px;
 	font-weight:bold;
 	font-family: 'Crimson Text', serif;
 }
@@ -32,7 +32,7 @@ section p{
 	width:100%;
 	height:10%;
 	position:absolute;
-	background-color:#353638;
+	background-color:#303336;
 	color:white;
 	display:flex;
 	bottom:0;
@@ -41,8 +41,8 @@ section p{
 }
 #First_Block{
 	width:100%;
-	height:50%;
-	background-color:#3A3D42;
+	height:60%;
+	background-color:#3a3e43;
 	color:white;
 	bottom:10%;
 	right:0;
@@ -51,30 +51,17 @@ section p{
     grid-template-columns:20% 20% 20% 20% 20%;
 }
 #First_Block section{
-  background-color:#3A3D42;
+  background-color:#3a3e43;
 }
 #First_Block section:nth-child(even){
-  background-color:#3A3D42;
-  margin-right:10px;
+  background-color:#3a3e43;
+  margin-right:20px;
 }
 #facebook{
 	width:30px;
 	height:30px;
 	border-radius:50%;
-	background-color:#3A3D42;
-	display:flex;
-	position:absolute;
-	justify-content:center;
-	align-self:center;
-	right:30%;
-	margin:5px;
-	top:3%;
-}
-#twitter{
-	width:30px;
-	height:30px;
-	border-radius:50%;
-	background-color:#3A3D42;
+	background-color:#3a3e43;
 	display:flex;
 	position:absolute;
 	justify-content:center;
@@ -83,11 +70,11 @@ section p{
 	margin:5px;
 	top:3%;
 }
-#instagram{
+#twitter{
 	width:30px;
 	height:30px;
 	border-radius:50%;
-	background-color:#3A3D42;
+	background-color:#3a3e43;
 	display:flex;
 	position:absolute;
 	justify-content:center;
@@ -96,23 +83,36 @@ section p{
 	margin:5px;
 	top:3%;
 }
+#instagram{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-color:#3a3e43;
+	display:flex;
+	position:absolute;
+	justify-content:center;
+	align-self:center;
+	right:21%;
+	margin:5px;
+	top:3%;
+}
 #up{
 	width:40px;
 	height:40px;
-	background-color:#3A3D42;
+	background-color:#3a3e43;
 	display:flex;
 	position:absolute;
 	justify-content:center;
 	align-items: center;
 	right: 3%;
-	bottom:4%;
-	
+	bottom:8%;
 }
   
 .fa-sort-up{
 	position:relative;
 	align-self:center;
 	font-size:40px;
+	margin-top:50%;
 }
 .fa-twitter{
 	position:relative;
@@ -142,6 +142,9 @@ article div{
 	float:left;
 	display:block;
 }
+article p{
+	font-size:17px;
+}
 #Popular{
 	height:40%;
 	width:20%;
@@ -151,8 +154,10 @@ article div{
     grid-gap:14px;
 }
 #Popular article{
-  background-color:#3A3D42;
-  font-size:25px;
+  background-color:#3a3e43;
+}
+#Popular p{
+	margin:0 auto;
 }
 #Images_Instagram{
 	height:40%;
@@ -160,14 +165,18 @@ article div{
 	position:absolute;
 	display:grid;
     grid-template-columns:30% 30% 30%;
-    grid-template-rows: 66% 66% 66%;
+    grid-template-rows: 60% 60% 60%;
     grid-gap:5px;
+    margin-left:20px;
 }
 #Images_Instagram div{
 	background-color:green;
 }
 #Images_Instagram div:nth-child(even){
 	background-color:blue;	
+}
+span{
+	font-size:16px;
 }
 /*#Popular article:nth-child(even){
   background-color:gray;
