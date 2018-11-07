@@ -1,9 +1,7 @@
-/* Responsive part */
-
 @media only screen and (min-width: 1663px) {
     /* HEADER */
 
-    .grid-container {
+    .header-grid-container {
         display: grid;
         justify-content: center;
         align-items: center;
@@ -84,7 +82,56 @@
         justify-content: center;
         margin-right: -200px;
     }
+
+    /* MAIN SECTION OF HOMEPAGE */
+
+
+    /* PAGINATION */
+
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 5/6;
+        margin-left: 2em;
+    }
+
+    .pagination a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        padding: 0.4em 0.85em;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 0.05em solid rgb(192, 191, 191);
+        border-radius: 50%;
+        margin: 0 0.4em;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(192, 191, 191);
+        width: 0.7em;
+        height: 1.5em;
+    }
+
+    .pagination span {
+        margin: 0 0.4em;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(192, 191, 191);
+    }
+    
+    .pagination a.active {
+        background-color: rgb(73, 73, 73);
+        color: white;
+        border: 0.05em solid rgb(192, 191, 191);
+    }
 }
+
+/* SMALL SCREENS */
 
 @media only screen and (max-width: 800px) {
     .grid-container {
