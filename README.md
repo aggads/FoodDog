@@ -20,3 +20,8 @@ https://aggads.github.io/FoodDog/
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://aggads.github.io/FoodDog/)
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://aggads.github.io/FoodDog/)
+
+
+
+
+[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://www.linkedin.com/in/samy-aggad-it/)
