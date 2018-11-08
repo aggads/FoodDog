@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FooDog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-desktop.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/style-tablet.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -13,13 +15,21 @@
 
 <body>
     <header class="header-grid-container">
-        <h1>FooDog</h1>
+        <section>
+            <nav class="header-mobile-menu">
+                <div class="mobile-menu"> </div>
+                <div class="mobile-menu"> </div>
+                <div class="mobile-menu"> </div>
+            </nav>
+
+            <h1>Foodog</h1>
+        </section>
         <nav class="header-social-media">
             <ul class="logo-social-media">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fas fa-search"></i></li>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><button class="button-search"><i class="fas fa-search"></i></button></li>
             </ul>
         </nav>
         <nav class="header-site-menu">
