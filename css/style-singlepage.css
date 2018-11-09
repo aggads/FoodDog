@@ -2,7 +2,6 @@
     display: grid;
     grid-template-rows: 4.0em;
     grid-template-columns: repeat(12, 1fr);
-    /* border-bottom: rgb(204, 204, 204); */
     border-bottom: 0.01em solid rgb(204, 204, 204);
 }
 
@@ -85,7 +84,6 @@ input:focus {
     margin-left: 0.5em;
 }
 
-
 /* HEADER - RIGHT part */
 
 .header-right {
@@ -103,25 +101,20 @@ li {
 }
 
 .logo-farmersdog {
-    background-color: rgb(255, 141, 106);
-    border-radius: 50%;
-    padding: 1.2em 0.8em;
-    font-size: 0.8em;
-    vertical-align: middle;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', sans-serif;
-    word-wrap: break-word;
+    line-height: 60px;
+    height: 58px;
+    width: 58px;
 }
 
 .button-search {
+    line-height: 60px;
     background-color: rgb(255, 255, 255);
     border: 0em;
 }
 
 .fa-search {
     padding-left: 0.80em;
+    padding-top: 1em;
     line-height: 1.2em;
     border-left: 1px solid rgb(247, 247, 247);
     font-size: 1.3em;
