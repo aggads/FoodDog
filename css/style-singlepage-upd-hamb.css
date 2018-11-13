@@ -19,12 +19,12 @@ ul {
     padding-left: 1.5em;
 }
 
-.mobile-menu {
+/* #header-menu-hamburger {
     width: 23px;
     height: 2px;
     background-color: rgb(89, 89, 89);
     margin: 5px 0;
-}
+} */
 
 h1 {
     font-size: 3.0em;
@@ -33,6 +33,35 @@ h1 {
     color: rgb(64, 64, 64);
     font-weight: 400;
 }
+
+.menu-hamburger-bacon #header-menu-hamburger {
+    display: none;
+}
+
+.menu-hamburger-bacon a {
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 1.8em;
+    color: rgb(64, 64, 64);
+    display: block;
+}
+
+.menu-hamburger-bacon a.icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.menu-hamburger-bacon a:hover {
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
 
 /* HEADER - MIDDLE part */
 
