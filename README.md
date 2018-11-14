@@ -3,16 +3,20 @@
 A simple blog that talks about feeding for the dogs
 
 ## Requirements
+---
 
 > Nothing
 
 //We have not tested it with higher versions but the codebase should be sufficient.//
 
 ## Details
+---
 
 ### Team
 
  By Team of 4, we have to create a blog about feeding for dogs for a customer
+
+##### Authors
 
  - [Diogo](https://github.com/DiogoMaMartins)
  - [Michel](https://github.com/MDE86)
@@ -21,12 +25,13 @@ A simple blog that talks about feeding for the dogs
  The team is managed by a project manager [Samy](https://github.com/aggads)
 
 ### Instruction
+---
 
-Ux
+#### Ux
 
 - The blog respect scrupulously the original graphic chart
 
-Others
+#### Others
 
  - The blog need to pass a minimum of 80% LightHouse
  - We need to retrieve data from a server to update article through ajax requests
@@ -44,14 +49,16 @@ Others
 * Kanban
 
 ## Usage
+---
 
-Anonyme user can read somes news
+Anyone can visit the site and read the articles without having to register
 
 ### See the progress of the project
+---
 
-[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](https://aggads.github.io/FoodDog/)
+[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](https://aggads.github.io/FoodDog/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://aggads.github.io/FoodDog/)
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://aggads.github.io/FoodDog/)
+
 
 
 Mockup PDF (Mobile Version)
