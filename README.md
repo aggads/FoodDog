@@ -1,6 +1,6 @@
 # FoodDog
 
-A simple blog that talks about feeding for the dogs
+Foodog is a blog talking about how to feed dogs.
 
 ## Requirements
 ---
@@ -14,7 +14,7 @@ A simple blog that talks about feeding for the dogs
 
 ### Team
 
- By Team of 4, we have to create a blog about feeding for dogs for a customer
+ Our team of four has to recreate the blog for our customer.
 
 ##### Authors
 
@@ -22,28 +22,28 @@ A simple blog that talks about feeding for the dogs
  - [Michel](https://github.com/MDE86)
  - [Silvia](https://github.com/Bosi3)
 
- The team is managed by a project manager [Samy](https://github.com/aggads)
+ The team is managed by project manager [Samy](https://github.com/aggads)
 
 ### Instruction
 ---
 
-#### Ux
+#### UX
 
-- The blog respect scrupulously the original graphic chart
+- The blog scrupulously respects the original graphic chart.
 
 #### Others
 
- - The blog need to pass a minimum of 80% LightHouse
- - We need to retrieve data from a server to update article through ajax requests
- - The blog is totaly responsive 
- - We use kanban to manage the project betwen the members
- - We need to implement a hamburger menu in the single page
- - We need to develop a mobile version
+ - The blog needs to pass a minimum of 80% on the LightHouse test;
+ - We need to retrieve data from a server to update articles through ajax requests;
+ - The blog is totaly responsive;
+ - We use a kanban to manage the project betwen the members;
+ - We need to implement a hamburger menu on the single page;
+ - We need to develop a mobile version from scratch;
 
 #### Build/Work with
 
-* Html/css
-* JavaScript/ Ajax
+* HTML/CSS
+* JavaScript/ AJAX
 * UX
 * Mockup (Adobe XD)
 * Kanban
@@ -67,7 +67,7 @@ Mockup PDF (Mobile Version)
 
 
 
-#### Some picture
+#### Screenshots
 
 * **Mobile mockup**
 
