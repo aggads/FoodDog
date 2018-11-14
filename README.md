@@ -12,7 +12,9 @@ Anonyme user can read somes news
 
 ### See the progress of the project
 
-https://aggads.github.io/FoodDog/
+Mockup PDF
+
+> https://drive.google.com/open?id=1oTRBqXoaXcU-o0fbcFshdFw7H7EBEhKu
 
 [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](https://aggads.github.io/FoodDog/)
 
