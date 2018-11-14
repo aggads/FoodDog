@@ -65,7 +65,7 @@ Mockup PDF (Mobile Version)
 
 * **Mobile mockup**
 
-![Test Image 1](http://image.noelshack.com/fichiers/2018/46/2/1542140401-capture3.png)
+![Test Image 1](http://image.noelshack.com/fichiers/2018/46/3/1542203702-capture.png)
 
 
 
