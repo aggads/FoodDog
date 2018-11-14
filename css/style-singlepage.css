@@ -23,15 +23,19 @@ h1 {
     font-size: 3.0em;
     font-family: 'Crimson Text', serif;
     padding-left: 0.5em;
-    color: rgb(64, 64, 64);
     font-weight: 400;
 }
 
-/* HEADER - LEFT part - hamburger menu */
-
-.menu-hamburger-bacon #header-menu-hamburger {
-    display: none;
+h1>a {
+    text-decoration: none;
+    color: rgb(64, 64, 64);
 }
+
+h1>a:hover {
+    color: rgb(255, 141, 106);
+}
+
+/* HEADER - LEFT part - hamburger menu */
 
 .menu-hamburger-bacon a {
     /* padding: 14px 16px; */
@@ -41,17 +45,84 @@ h1 {
     display: block;
 }
 
-.header-menu-hamburger {
-    display: block; 
-    /* check this piece of code , menu is not working properly*/
+#header-menu-hamburger {
+    display: none;
+    position: absolute;
+    left: 1%;
+    top: 7.5%;
+    width: 10rem;
+    padding: 2rem;
+    padding-right: 4rem;
+    background-color: rgb(247, 247, 247);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+    font-weight: 600;
+    color: rgb(64, 64, 64);
+    line-height: 4em;
+    text-transform: uppercase;
 }
 
 .menu-hamburger-bacon a:hover {
-    color: black;
+    color: rgb(255, 141, 106);
 }
 
-.active {
-    background-color: #4CAF50;
+.header-menu-para-top,
+.header-menu-para-middle {
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+/* HEADER - LEFT part - hamburger menu - social media icons */
+
+.header-menu-para-bottom {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.header-menu-para-bottom>span>a>i {
+    padding-right: 2.0em;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+.header-menu-socmed {
+    background: rgb(255, 141, 106);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5px;
+    vertical-align: middle;
+    margin-right: 12px;
+    display: inline-block;
+
+}
+
+.header-menu-socmed a i {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-menu-socmed:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+.fa-facebook-f {
+    padding: 10px 8px 8px 15px;
+    margin-right: 5px;
+}
+
+.fa-twitter {
+    padding: 10px 8px 8px 11px;
+    margin-right: 5px;
+}
+
+.fa-instagram {
+    padding: 10px 8px 8px 11px;
 }
 
 /* HEADER - LEFT part - hamburger icon */
@@ -66,6 +137,14 @@ div {
     height: 2px;
     background-color: rgb(64, 64, 64);
     margin: 5px 0;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon:hover>div {
+    background-color: rgb(255, 141, 106);
 }
 
 /* HEADER - MIDDLE part */
@@ -116,6 +195,11 @@ input:focus {
     color: rgb(255, 255, 255);
     padding: 0.5em 1.5em;
     margin-left: 0.5em;
+}
+
+.button-newsletter:hover {
+    background-color: rgb(255, 141, 106);
+    border: solid rgb(255, 141, 106);
 }
 
 /* HEADER - RIGHT part */

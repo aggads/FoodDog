@@ -99,17 +99,8 @@
     .button-search {
         background-color: white;
         border: 0em;
-        /* overflow-y: hidden;
-        max-height: 500px;
-        transition-property: all;
-        transition-duration: .5s;
-        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-        font-size: 1.01em; */
     }
 
-    /* .button-search.closed {
-        max-height: 0;
-    } */
 
     .button-search:focus {
         /* prevents border from showing when clicked */
