@@ -1,42 +1,73 @@
 # FoodDog
 
-A blog that talks about feeding for the dogs
+A simple blog that talks about feeding for the dogs
 
 ## Requirements
-* Nothing
+
+> Nothing
 
 //We have not tested it with higher versions but the codebase should be sufficient.//
 
 ## Details
 
- By Team of 4, we have to create a blog about feeding for dogs
+### Team
+
+ By Team of 4, we have to create a blog about feeding for dogs for a customer
 
  - [Diogo](https://github.com/DiogoMaMartins)
  - [Michel](https://github.com/MDE86)
  - [Silvia](https://github.com/Bosi3)
 
- The team are managed by a project manager [Samy](https://github.com/aggads)
+ The team is managed by a project manager [Samy](https://github.com/aggads)
 
-#### Build with
+### Instruction
+
+Ux
+
+- The blog respect scrupulously the original graphic chart
+
+Others
+
+ - The blog need to pass a minimum of 80% LightHouse
+ - We need to retrieve data from a server to update article through ajax requests
+ - The blog is totaly responsive 
+ - We use kanban to manage the project betwen the members
+ - We need to implement a hamburger menu in the single page
+ - We need to develop a mobile version
+
+#### Build/Work with
 
 * Html/css
 * JavaScript/ Ajax
 * UX
-* Kaban
+* Mockup (Adobe XD)
+* Kanban
 
 ## Usage
+
 Anonyme user can read somes news
 
 ### See the progress of the project
 
-Mockup PDF
+[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](https://aggads.github.io/FoodDog/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://aggads.github.io/FoodDog/)
+
+
+Mockup PDF (Mobile Version)
 
 > https://drive.google.com/open?id=1oTRBqXoaXcU-o0fbcFshdFw7H7EBEhKu
 
-[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](https://aggads.github.io/FoodDog/)
 
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://aggads.github.io/FoodDog/)
+#### Some picture
+
+* **Mobile mockup**
+
+![Test Image 1](http://image.noelshack.com/fichiers/2018/46/2/1542140401-capture3.png)
+
+
+
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://aggads.github.io/FoodDog/)
 
