@@ -1,13 +1,7 @@
 # FoodDog
-
-Foodog is a blog talking about how to feed dogs.
-
-## Requirements
 ---
 
-> Nothing
-
-//We have not tested it with higher versions but the codebase should be sufficient.//
+Foodog is a blog talking about how to feed dogs.
 
 ## Details
 ---
