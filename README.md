@@ -11,17 +11,18 @@ A blog that talks about feeding for the dogs
 
  By Team of 4, we have to create a blog about feeding for dogs
 
- - [Diogo] (https://github.com/DiogoMaMartins)
- - [Michel] (https://github.com/MDE86)
- - [Silvia] (https://github.com/Bosi3)
+ - [Diogo](https://github.com/DiogoMaMartins)
+ - [Michel](https://github.com/MDE86)
+ - [Silvia](https://github.com/Bosi3)
 
- The team are managed by a project manager [Samy] (https://github.com/aggads)
+ The team are managed by a project manager [Samy](https://github.com/aggads)
 
 #### Build with
 
 * Html/css
 * JavaScript/ Ajax
 * UX
+* Kaban
 
 ## Usage
 Anonyme user can read somes news
