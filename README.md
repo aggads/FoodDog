@@ -7,7 +7,6 @@ Foodog is a blog talking about how to feed dogs.
 ---
 
 ### Usage
----
 
 Anyone can visit the site and read the articles without having to register.
 
