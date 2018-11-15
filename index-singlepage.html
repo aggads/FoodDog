@@ -1,12 +1,14 @@
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="On this website you'll find plenty of tips on how to feed dogs">
     <title>FooDog</title>
-    <link rel="stylesheet" href="css/style-singlepage.css">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-TEST-singlepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 </head>
@@ -21,10 +23,10 @@
                         <a class="border-bottom" href="#foodog">Menu</a>
                     </p>
                     <p class="header-menu-para-middle">
-                    <a href="#nutrition">Nutrition</a>
-                    <a href="#wellness">Wellness</a>
-                    <a href="#lifestyle">Lifestyle</a>
-                    <a class="border-bottom" href="#community">Community</a>
+                        <a href="#nutrition">Nutrition</a>
+                        <a href="#wellness">Wellness</a>
+                        <a href="#lifestyle">Lifestyle</a>
+                        <a class="border-bottom" href="#community">Community</a>
                     </p>
                     <p class="header-menu-para-bottom">
                         <span class="header-menu-socmed"><a href="#community"><i class="fab fa-facebook-f"></i></a></span>
@@ -43,17 +45,32 @@
 
         <section class="header-middle">
             <span>Digest In Your Inbox</span>
-            <form><input type="text" name="" placeholder="your email" class="form-email"></form>
+            <form><input type="text" aria-label="Enter Email" name="Email" placeholder="your email" class="form-email"></form>
             <button class="button-newsletter">sign up</button>
         </section>
 
         <section class="header-right">
-            <nav class="header-social-media">
-                <ul class="logo-social-media">
-                    <li><span class="logo-farmer"><img class="logo-farmersdog" src="img/logo-farmersdog.png"></span></li>
-                    <li><button class="button-search"><i class="fas fa-search"></i></button></li>
+
+            <nav class="header-logo-search">
+                <ul class="logo-website-farmersdog-ul">
+                    <li><span class="logo-farmer"><img class="logo-farmersdog-li" src="img/logo-farmersdog.png" alt="Farmer's Dog Logo"></span></li>
                 </ul>
             </nav>
+
+            <article class="header-right-modalwindow">
+
+                <button aria-label="Launch Search Function" class="button-search" id="button-search-id"><i class="fas fa-search"></i></button>
+
+                <div id="modalwindow" class="search-modal-window">
+                    <div class="search-modal-window-content">
+                        <span class="search-close-window">&times;</span>
+                        <input class="search-bar-input" type="text" placeholder="Type here what you're looking for and maybe you'll find it!">
+                        <p class="foodogle-power"><span class="google-power">Search Engine powered by &nbsp</span><img src="img/foodogle.JPG"></p>
+                    </div>
+                </div>
+
+            </article>
+
         </section>
 
     </header>
@@ -67,7 +84,7 @@
     <footer>
     </footer>
 
-    <script src="js/script-singlepage.js"></script>
+    <script src="script-TEST-singlepage.js"></script>
 </body>
 
 </html>

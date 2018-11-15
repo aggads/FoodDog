@@ -3,6 +3,7 @@
     grid-template-rows: 4.0em;
     grid-template-columns: repeat(12, 1fr);
     border-bottom: 0.01em solid rgb(204, 204, 204);
+    margin-top: -0.2em;
 }
 
 ul {
@@ -49,7 +50,7 @@ h1>a:hover {
     display: none;
     position: absolute;
     left: 1%;
-    top: 7.5%;
+    top: 70px;
     width: 10rem;
     padding: 2rem;
     padding-right: 4rem;
@@ -98,7 +99,6 @@ h1>a:hover {
     vertical-align: middle;
     margin-right: 12px;
     display: inline-block;
-
 }
 
 .header-menu-socmed a i {
@@ -158,10 +158,10 @@ div {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.09em;
     font-size: 0.95em;
+    padding-bottom: 0.4em;
 }
 
 form {
-    padding-top: 1em;
     padding-left: 0.8em;
 }
 
@@ -169,12 +169,16 @@ input {
     align-self: center;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid rgb(0, 0, 0);
-    line-height: 1.8em;
+    line-height: 1.9em;
     width: 110%;
     padding: 0.1em 0.85em;
 }
 
-::placeholder {
+.header-middle>span {
+    padding-left: 1.8em;
+}
+
+form::placeholder {
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 600;
@@ -193,8 +197,9 @@ input:focus {
     font-size: 0.75em;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    padding: 0.5em 1.5em;
+    padding: 0.6em 1.8em 0.6em 1.8em;
     margin-left: 0.5em;
+    letter-spacing: 0.1em;
 }
 
 .button-newsletter:hover {
@@ -211,23 +216,24 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding-bottom: 1em;
-    padding-left: -1em;
+    padding-right: 2.5em;
 }
 
 li {
     float: left;
 }
 
-.logo-farmersdog {
-    line-height: 60px;
+.logo-farmersdog-li {
+    line-height: 62px;
     height: 58px;
     width: 58px;
 }
 
 .button-search {
     line-height: 60px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     border: 0em;
+    padding-top: 1.5em;
 }
 
 .fa-search {
@@ -236,4 +242,95 @@ li {
     line-height: 1.2em;
     border-left: 1px solid rgb(247, 247, 247);
     font-size: 1.3em;
+}
+
+.fa-search:hover {
+    color: rgb(255, 141, 106);
+}
+
+.button-search:focus {
+    outline: 0;
+}
+
+.search-modal-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto;  */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+}
+
+.search-modal-window-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 20%;
+    /* overflow-y: auto; */
+}
+
+.search-close-window {
+    display: flex;
+    text-align: right;
+    float: right;
+    color: #aaaaaa;
+    font-size: 5em;
+    font-weight: bold;
+    margin-left: 1000px;
+    padding-bottom: 100px;
+}
+
+.search-close-window:hover,
+.search-close-window:focus {
+    color: rgb(255, 141, 106);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-modal-window-content>input {
+    margin-bottom: 2em;
+}
+
+.search-bar-input {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 2.5em;
+    width: 50%;
+    padding: 0.1em 0.85em;
+}
+
+input::placeholder {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(75, 79, 84);
+    letter-spacing: 0.09em;
+}
+
+.foodogle-power>img {
+    height: 17%;
+    width: 17%;
+    /* padding-top: 15px; */
+    vertical-align:middle
+}
+
+.foodogle-power {
+    margin-top: 10px;
+    text-align: right;
+    display: block;
+}
+
+.google-power {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
 }
