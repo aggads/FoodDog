@@ -6,6 +6,29 @@ Foodog is a blog talking about how to feed dogs.
 ## Details
 ---
 
+### Usage
+---
+
+Anyone can visit the site and read the articles without having to register.
+
+The blog has 5 sections:
+
+- *Nutrition :*
+
+	> Sections dealing with food, nutrition tips, etc.
+
+- *Wellness:*
+
+	> Section dealing with canine well-being and different ways of taking care of your dog
+
+- *LifeStyle:*
+
+	> Section relating to the dogs' lifestyle, activities to be done with them, etc.
+
+- *Community:*
+
+	> Community section where you can exchange with others and share your knowledge and experiences
+
 ### Team
 
  Our team of four has to recreate the blog for our customer.
@@ -41,11 +64,6 @@ Foodog is a blog talking about how to feed dogs.
 * UX
 * Mockup (Adobe XD)
 * Kanban
-
-## Usage
----
-
-Anyone can visit the site and read the articles without having to register
 
 ### See the progress of the project
 ---
