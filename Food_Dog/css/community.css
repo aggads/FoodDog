@@ -651,3 +651,17 @@ and (max-device-width : 6000px){
 		display:block;
 	}
 }
+nav ul a {
+    -webkit-transition: background-color ;
+    transition: background-color .3s;
+    font-size: 14px !important;
+    color:rgb(64, 64, 64)!important;
+    display: block;
+    padding: 0!important;
+    cursor: pointer;
+}
+.menu-site{
+	margin-top:20px!important;
+	left:12%;
+	position:relative;
+}

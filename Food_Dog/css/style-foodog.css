@@ -159,7 +159,7 @@
         margin: auto;
         border: 1px solid #888;
         width: 60%;
-        height: 30%;
+        
     }
     
     .search-close-window {
@@ -217,6 +217,7 @@
     .google-power {
         font-size: 13px;
         font-family: 'Open Sans', sans-serif;
+        color:black;
     }
 
     /* MAIN SECTION OF HOMEPAGE */
