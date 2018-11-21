@@ -10,17 +10,44 @@
   	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
   	<link rel="stylesheet" href="css/style-foodog.css">
 	<title>LifeStyle</title>
+	<script type="text/javascript">
+      var close=0;
+	function menu_mobile(){
+		if (close == 0){
+		document.getElementById("container_menu_drop").classList.remove("hide1");
+		document.getElementById("container_menu_drop").classList.add("show");
+		close ++;
+		}else if(close == 1 ){
+		document.getElementById("container_menu_drop").classList.remove("show");
+		document.getElementById("container_menu_drop").classList.add("hide1");
+		close --;
+		}
+	}
+	</script>
 </head>
 <body>
 	<header id="top" class="header-grid-container">
+		<section id="mobile_nav">
+			<i class="fas fa-bars" onclick="menu_mobile()"></i>
+			<div id="container_menu_drop" class="hide1">
+			<ul id="drop_menu" >
+				<h4>WELCOME</h4>
+				<hr>
+				<li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+		</section>
         <section class="header-title">
             <h1>FooDog</h1>
         </section>
         <nav class="header-social-media">
             <ul class="logo-social-media">
-                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li class="hide1"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f "></i></a></li>
+                <li class="hide1"><a href="https://www.twitter.com/"><i class="fab fa-twitter "></i></a></li>
+                <li class="hide1"><a href="https://www.instagram.com/"><i class="fab fa-instagram "></i></a></li>
                 <li><button aria-label="Launch Search Function" id="button-search-id" class="button-search"><i class="fas fa-search"></i></button></li>
             </ul>
 
@@ -35,10 +62,10 @@
         </nav>
         <nav class="header-site-menu">
             <ul class="menu-site">
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="wellness.html">Wellness</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li class="hide1"><a href="nutrition.html">Nutrition</a></li>
+                <li class="hide1"><a href="wellness.html">Wellness</a></li>
+                <li class="hide1"><a href="lifestyle.html">Lifestyle</a></li>
+                <li class="hide1"><a href="community.html">Community</a></li>
             </ul>
         </nav>
     </header>
@@ -231,10 +258,10 @@
    </div>
     <div class="row s12">
    <section id="Social_Network">
-   	<a href="#" class="hide1" > <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
-   	<a href="#" class="hide1" > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
-   	<a href="#" class="hide1" > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
-   	<a href="#top"class="hide1"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
+   	<a href="#"> <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
+   	<a href="#"  > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
+   	<a href="#"  > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
+   	<a href="#top"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
     <h1>Copyright © 2018 Foodog</h1>
    </section>
  </div>

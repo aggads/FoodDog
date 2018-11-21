@@ -12,7 +12,7 @@
         //console.log(article.docs[i]);
         output +=
         ` <article id="First_Article">
-        <img  src="${article.docs[i].imgUrl}" />
+        <img  src="${article.docs[i].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
         <p class="topic">LIFESTYLE<span>|</span></p>
