@@ -76,7 +76,9 @@ Mockup PDF (Mobile Version)
 
 > https://drive.google.com/open?id=1oTRBqXoaXcU-o0fbcFshdFw7H7EBEhKu
 
+Page published
 
+> https://aggads.github.io/FoodDog/
 
 #### Screenshots
 
