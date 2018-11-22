@@ -4,7 +4,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr  ;
         grid-template-columns: repeat(12, 1fr);
     }
 
@@ -159,7 +159,7 @@
         margin: auto;
         border: 1px solid #888;
         width: 60%;
-        height: 30%;
+        
     }
     
     .search-close-window {
@@ -217,6 +217,7 @@
     .google-power {
         font-size: 13px;
         font-family: 'Open Sans', sans-serif;
+        color:black;
     }
 
     /* MAIN SECTION OF HOMEPAGE */
@@ -265,4 +266,3 @@
         color: white;
         border: 0.05em solid rgb(212, 212, 212);
     }
-}
