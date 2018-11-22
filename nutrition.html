@@ -7,19 +7,52 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
+  	<link rel="stylesheet" href="css/mobile.css">
+  	<link rel="stylesheet" href="css/tablets.css">
   	<link rel="stylesheet" href="css/style-foodog.css">
 	<title>NUTRITION</title>
+<script type="text/javascript">
+      var close=0;
+	function menu_mobile(){
+		if (close == 0){
+		document.getElementById("container_menu_drop").classList.remove("hide1");
+		document.getElementById("container_menu_drop").classList.add("show");
+		document.getElementById("container_menu_drop").classList.remove("hide_Subjets");
+		document.getElementById("container_menu_drop").classList.add("show");
+		close ++;
+		}else if(close == 1 ){
+		document.getElementById("container_menu_drop").classList.remove("show");
+		document.getElementById("container_menu_drop").classList.add("hide1");
+		document.getElementById("container_menu_drop").classList.remove("show");
+		document.getElementById("container_menu_drop").classList.add("hide_Subjets");
+		close --;
+		}
+	}
+	</script>
 </head>
 <body>
 	<header id="top" class="header-grid-container">
+		<section id="mobile_nav">
+			<i class="fas fa-bars" onclick="menu_mobile()"></i>
+			<div id="container_menu_drop" class="hide1 hide_Subjets ">
+			<ul id="drop_menu" >
+				<a href="index.html"><h4>WELCOME</h4></a>
+				<hr>
+				<li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+		</section>
         <section class="header-title">
             <h1>FooDog</h1>
         </section>
         <nav class="header-social-media">
             <ul class="logo-social-media">
-                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li class="hide1 hide_Subjets"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f "></i></a></li>
+                <li class="hide1 hide_Subjets"><a href="https://www.twitter.com/"><i class="fab fa-twitter "></i></a></li>
+                <li class="hide1 hide_Subjets"><a href="https://www.instagram.com/"><i class="fab fa-instagram "></i></a></li>
                 <li><button aria-label="Launch Search Function" id="button-search-id" class="button-search"><i class="fas fa-search"></i></button></li>
             </ul>
 
@@ -34,10 +67,10 @@
         </nav>
         <nav class="header-site-menu">
             <ul class="menu-site">
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="wellness.html">Wellness</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li class="hide1"><a href="nutrition.html">Nutrition</a></li>
+                <li class="hide1"><a href="wellness.html">Wellness</a></li>
+                <li class="hide1"><a href="lifestyle.html">Lifestyle</a></li>
+                <li class="hide1"><a href="community.html">Community</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +91,7 @@
 	 	 	
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
-	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
+	 	 	 <p class="topic">NUTRITION<span>|</span></p>
 	 	 	 <a href="singlePage.html"><h2 class="sub_Title">THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
@@ -158,7 +191,7 @@
 	 	 	</div>
 	 	  </article> 
 	 	  <hr>
-	 	   <nav id="change_page">
+	 	   <nav id="change_page" class="hide">
 	 	 	<div id=one><a href="#">1</div></a>
 	 	 	<div id="two"><a href="#">2</div></a>
 	 	 	<div id=third><a href="#">3</div></a>
@@ -204,7 +237,7 @@
           </article>
       </aside>
     </div>
-    <div class="col s12 m2 l2">
+    <div class="col s12 m2 l2" id="insta_block">
       <aside id="instagram_pic " class="hide1">
         <div >
           <h3 class="title_footer  hide1">Instagram</h3>
@@ -225,10 +258,10 @@
    </div>
     <div class="row s12">
    <section id="Social_Network">
-   	<a href="#" class="hide1" > <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
-   	<a href="#" class="hide1" > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
-   	<a href="#" class="hide1" > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
-   	<a href="#top"class="hide1"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
+   	<a href="#"> <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
+   	<a href="#"  > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
+   	<a href="#"  > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
+   	<a href="#top"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
     <h1>Copyright © 2018 Foodog</h1>
    </section>
  </div>
