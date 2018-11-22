@@ -4,7 +4,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr  ;
         grid-template-columns: repeat(12, 1fr);
     }
 
@@ -266,4 +266,3 @@
         color: white;
         border: 0.05em solid rgb(212, 212, 212);
     }
-}
