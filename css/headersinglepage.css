@@ -105,10 +105,9 @@ h1>a:hover {
     display: inline-block;
 }
 
-.header-menu-socmed a i {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+.header-menu-socmed .fa-facebook-f{
+    margin-top:10px;
+    position:relative;
 }
 
 .header-menu-socmed:hover {

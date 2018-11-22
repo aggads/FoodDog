@@ -12,14 +12,14 @@
         //console.log(article.docs[i]);
         output +=
         ` <article id="First_Article">
-        <img  src="${article.docs[i].imgUrl}" width="500px" height="500px" />
+        <img alt="img" src="${article.docs[i].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
         <p class="topic">LIFESTYLE<span>|</span></p>
         <h2 class="sub_Title"> ${article.docs[i].title}</h2>
         <p class="resume"> ${article.docs[i].text}</p>
         <section class="share_">
-       <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+       <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
       </div>
       </article>
