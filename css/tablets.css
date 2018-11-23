@@ -24,13 +24,16 @@
 }.share_{
 	display:none;
 }#first_col{
+	display:none;
 	position:relative;
 	left:-150px;
 }#categories{
 	font-size:18px;
-}#title_footer{
+}.title_footer{
 	font-size:20px;
+	display:none;
 }#Second_Block{
+	display:none;
 	position:relative;
 	left:-50px;
 }#popular_posts{
@@ -57,7 +60,9 @@
 }#instagram_Pictures{
 	width:200px;
 	margin-top:10px;
+	display:none;
 }#insta_block {
+	display:none;
 	position:relative;
 	top:6%;
 	margin-left:100px;
@@ -113,5 +118,47 @@
 		margin-left:10px;
 	}.fa-search {
 		font-size:40px!important;
-	}
+	}#Social_Network {
+    width: 100%;
+    height: 100px!important;
+    position: absolute;
+    background-color: #303336;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+}#Social_Network h1 {
+    font-size: 40px;
+    color: white!important;
+    display:block!important;
+    left:5%!important;
+    position:relative;
+}#facebook {
+    top: -80%;
+    left: 37%!important;
+    position: absolute;
+}.fa-facebook-f {
+    font-size: 40px;
+}#twitter {
+    top: -80%;
+    left: 47%!important;
+    position:absolute;
+}.fa-twitter {
+    font-size: 40px;
+}#instagram {
+    top: -80%;
+    left: 57%!important;
+    position:absolute;
+}.fa-instagram {
+    font-size: 40px;
+}footer {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    height: 200px!important;
+    background: #3a3e43;
+}#First_Block {
+    background-color: #3a3e43;
+    height: 0px!important;
+}
 }
