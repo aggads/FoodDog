@@ -7,11 +7,10 @@
 
  var output = '';
  
-    
       for(let i in article.docs){
         //console.log(article.docs[i]);
         output +=
-        ` <article id="First_Article">
+        ` <article class="Article all_Articles">
         <img alt="img" src="${article.docs[i].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>

@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Admin Post</title>
+</head>
+<body>
+
+	<h2 id="title">POST XMLHttpRequest -js -dcode</h2>
+	<p id="serverReponse"></p>
+
+</body>
+<script type="text/javascript">
+	var formData = new FormData();
+
+formData.append("username", "Groucho");
+formData.append("accountnum", 123456); // number 123456 is immediately converted to a string "123456"
+
+// HTML file input, chosen by user
+
+
+// JavaScript file-like object
+var content = '<a id="a"><b id="b">hey!</b></a>'; // the body of the new file...
+var blob = new Blob([content], { type: "text/xml"});
+
+formData.append("webmasterfile", blob);
+
+var request = new XMLHttpRequest();
+request.open('POST', "https://foodog.herokuapp.com/articles");
+request.send(formData);
+	/*
+	const xhr = new XMLHttpRequest();
+
+	xhr.onload = function () {
+		if(this.status == 200){
+		const serverReponse = document.getElementById('serverReponse');
+		serverReponse.innerHTML = this.responseText;
+
+	};
+}
+	xhr.open("POST","https://foodog.herokuapp.com/articles");
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhr.send("title=Dogs&[tags=wellness]&imgUrl='http://res.cloudinary.com/dfpdonjil/image/upload/v1542364638/demo/e0u8tq7yodx8rwyfpk38.jpg'&title=THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW&text=Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition");*/
+</script>
+</html>
+<!--
+<html>
+  <head>
+    <link rel="manifest" href="/manifest.json">
+  	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <style type="text/css">
+  	header{
+  		position:absolute;
+  		display:flex;
+  		margin: 0 auto;
+  		top:0;
+  		left:0;
+  		background-color:wheat;
+  		width:100%;
+  		height:80px;	
+  		justify-content:center;	
+  	}#contact-form{
+  		margin-top:100px;
+  		display:flex;
+  		flex-direction:column;
+  		width:100%;
+  	}#submit{
+  		background-color:wheat;  
+  		font-weight:bold;
+  		height:40px;
+  	}
+  </style>
+  </head>
+  <body>
+  	<header>
+  		<h1>FooDog</h1>
+  	</header>
+     <div id="contact-form">
+  		<label>Topic:</label>
+  		<input type="text" name="topic" placeholder="write your topic" id="topic" class="contact-form"><br/>
+  		<label>Title:</label>
+  		<input type="text" name="title" placeholder="write your title" id="title" class="contact-form"><br/>
+  		<label>Image:</label>
+  		<input type="text" name="image" placeholder="write the location of the image " id="image" class="contact-form"><br/>
+  		<label>Text:</label>
+  		<textarea rows="14" cols="50" name="text for the article" placeholder="write your text" id="text"></textarea>	<br/>
+  		<input type="submit" value="Post" id="submit" >
+  		</div>
+  		 <script type="text/javascript">
+   $(document).ready(function() {
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                /*url: 'https://foodog.herokuapp.com/articles',*/
+                url: 'http://localhost:3000/employees',
+                data: {topic: $('#topic').val(),
+                title: $('#title').val(),
+                Image: $('#image').val(),
+                text: $('#text').val()
+            },
+                   headers: {"X-Test-Header": "test-value"},
+                success: function(data, textStatus, xhr) {
+        console.log(xhr.status);
+    },
+    complete: function(xhr, textStatus) {
+        console.log(xhr.status);
+    } 
+            });
+        });
+    });
+        /*
+        $(document).ready(function() {
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                contentType: "application/json",
+              
+                url: 'http://localhost:3000/employees',
+                data: {tags: $('#topic').val(),
+                title: $('#title').val(),
+                image: $('#image').val(),
+                text: $('#text').val()
+                
+
+            },
+                  headers: {"X-Test-Header": "test-value"},
+                success: function(data, textStatus, xhr) {
+        console.log(xhr.status);
+    },
+    complete: function(xhr, textStatus) {
+        console.log(xhr.status);
+    } 
+            
+            });
+
+        });
+    });
+  		 	/*function test (){
+  		 	 var xhr = new XMLHttpRequest();
+  		 	
+    xhr.open('GET', 'https://api.myjson.com/bins/hwpoe', true);
+ xhr.onload = function() {
+      if(this.status == 200){
+      var article = JSON.parse(this.responseText);
+      var output = '';
+ 
+      for(let i in article.docs){
+        console.log(article.docs[i]);
+    }
+  }
+}
+ xhr.send();   
+}
+ */
+
+</script>
+  	</body>
+  		<!--<script type="text/javascript">
+  			$(document).ready(function() {
+        $('#submit').click(function(e) {
+        	var apiKey = "$2a$10$DmdtjxI3uOKDjaaVOC2vgehskuWYqCyl2TgT.MdcVrieVmPgOqJ7K";
+            e.preventDefault();
+            $.ajax({
+                type: 'PUT',
+                contentType: "application/json",
+                url: 'https://api.myjson.com/bins/hwpoe',
+                headers: { "APIkey": apiKey },
+
+                data: {tagForArticle: $('#topic').val(),
+                title: $('#title').val(),
+                imgUrl: $('#image').val(),
+                text: $('#text').val()
+                
+
+            },
+            headers: {"X-Test-Header": "test-value"},
+
+                success: function (textStatus, status) {
+                    console.log(textStatus);
+                    console.log(status);
+                   },
+                
+              
+            
+            });
+
+        });
+    });
+  			$2a$10$DmdtjxI3uOKDjaaVOC2vgehskuWYqCyl2TgT.MdcVrieVmPgOqJ7K
+  	var title = document.getElementById("title").value;
+    var image = document.getElementById("image").value;
+    var text = document.getElementById("text").value; 
+    var topic = document.getElementById("topic").value;
+  	fetch('http://localhost:3000/employees', {
+
+     method: 'post',
+      headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  },
+
+  body: JSON.stringify({'topic:'&title, str: 'Some string: &=&'})
+}).then(res=>res.json())
+  .then(res => console.log(res));
+  		</script>-->
+
+  <!--	<script type="text/javascript">
+  			function myFunction(){
+  	var title = document.getElementById("title").value;
+    var image = document.getElementById("image").value;
+    var text = document.getElementById("text").value; 
+    var topic = document.getElementById("topic").value;
+    var xhr = new XMLHttpRequest(); 
+    xhr.onload = function () {
+    	console.log(this.responseText);
+     }
+     xhr.open('POST','http://localhost:3000/employees',true);
+     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+     xhr.send(('topic='+ topic)('title='+ title));
+    }
+</script>-->
+<!--
+	encodeURI
+  	<script type="text/javascript">
+  		var xhr = new XMLHttpRequest();
+  		xhr.open('POST','http://localhost:3000/employees',true);
+  		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  		xhr.onload = function () {
+  			console.log(this.responseText);
+  		};
+  		xhr.send('user=person&pwd=password');
+  	</script>
+
+  </body>
+  <script type="text/javascript">
+  	 $(document).ready(function() {
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:3000/employees',
+                data: {topic: $('#topic').val(),
+                title: $('#title').val(),
+                Image: $('#image').val(),
+                text: $('#text').val()
+            },
+                success: function(data)
+                {
+                    $("#content").html(data);
+                }
+            });
+        });
+    });
+  
+/*
+  	function run () {
+  	const topic = document.getElementById('topic');
+  	const title = document.getElementById('title');
+  	const image = document.getElementById('image');
+  	const text = document.getElementById('text');
+  	a = topic.value;
+  		var xhr = new XMLHttpRequest();
+  		xhr.open('POST','http://localhost:3000/employees',true);
+  		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  		xhr.send('topic=')
+  	}*/
+  </script>-->
+</html>-->

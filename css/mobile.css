@@ -261,5 +261,14 @@ and (max-device-width : 650px){
     left: -200px;
 }.share_1{
   display:none;
+}.Article  img {
+    width: 100%!important;
+    height: 500px!important;
+    border-radius: 10%!important;
+    position: relative!important;
+    z-index: 0!important;
+} .all_Articles {
+    display: flex;
+    flex-direction: column;
 }
 }
