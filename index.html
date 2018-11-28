@@ -24,6 +24,48 @@
   </style>
 
   <title>FooDog</title>
+  <script type="text/javascript">
+    var close = 0;
+    function menu_mobile() {
+      if (close == 0) {
+        document.getElementById("container_menu_drop").classList.remove("hide1");
+        document.getElementById("container_menu_drop").classList.add("show");
+        document.getElementById("container_menu_drop").classList.remove("hide_Subjets");
+        document.getElementById("container_menu_drop").classList.add("show");
+        close++;
+      } else if (close == 1) {
+        document.getElementById("container_menu_drop").classList.remove("show");
+        document.getElementById("container_menu_drop").classList.add("hide1");
+        document.getElementById("container_menu_drop").classList.remove("show");
+        document.getElementById("container_menu_drop").classList.add("hide_Subjets");
+        close--;
+      }
+    }
+    function fixedHeader() {
+      document.getElementById("mobile_show").classList.remove("masked_loadpage");
+      document.getElementById("mobile_show").classList.add("show_loadpage");
+      document.getElementById("mobile_main").classList.add("masked_loadpage");
+    }
+    function change_post_best() {
+      document.getElementById("firstSect").classList.add("show");
+      document.getElementById("secondSect").classList.add("masked");
+      document.getElementById("thirdSect").classList.add("masked");
+      document.getElementById("secondSect").classList.remove("show");
+      document.getElementById("thirdSect").classList.remove("show");
+    } function change_post_Featured() {
+      document.getElementById("secondSect").classList.add("show");
+      document.getElementById("firstSect").classList.add("masked");
+      document.getElementById("thirdSect").classList.add("masked");
+      document.getElementById("firstSect").classList.remove("show");
+      document.getElementById("thirdSect").classList.remove("show");
+    } function change_post_Latest() {
+      document.getElementById("thirdSect").classList.add("show");
+      document.getElementById("secondSect").classList.add("masked");
+      document.getElementById("firstSect").classList.add("masked");
+      document.getElementById("firstSect").classList.remove("show");
+      document.getElementById("secondSect").classList.remove("show");
+    }
+  </script>
   <style type="text/css">
     .masked_loadpage {
       display: none;
@@ -141,7 +183,7 @@
                           eaque facilis repudiandae necessitatibus.</p>
                       </div>
                     </div>
-
+                    
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
                       <a name="singlepage" class="block" href="singlePage.html">
                         <img alt="card" class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
@@ -591,9 +633,9 @@
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -679,7 +721,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/script-foodog.js" defer></script>
+    <script src="js/script-foodog.js"></script>
     <script src="js/script-anim-foodog.js"></script>
 
 </body>
