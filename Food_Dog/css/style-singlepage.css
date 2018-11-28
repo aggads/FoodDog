@@ -1,0 +1,128 @@
+.header-grid-container {
+    display: grid;
+    grid-template-rows: 4.0em;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 0.01em solid rgb(204, 204, 204);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER - LEFT part */
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1/3;
+    padding-left: 1.5em;
+}
+
+.mobile-menu {
+    width: 23px;
+    height: 2px;
+    background-color: rgb(89, 89, 89);
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 3.0em;
+    font-family: 'Crimson Text', serif;
+    padding-left: 0.5em;
+    color: rgb(64, 64, 64);
+    font-weight: 400;
+}
+
+/* HEADER - MIDDLE part */
+
+.header-middle {
+    display: flex;
+    grid-column: 5/9;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.09em;
+    font-size: 0.95em;
+}
+
+form {
+    padding-top: 1em;
+    padding-left: 0.8em;
+}
+
+input {
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 1.8em;
+    width: 110%;
+    padding: 0.1em 0.85em;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(75, 79, 84);
+    letter-spacing: 0.09em;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button-newsletter {
+    text-transform: uppercase;
+    border-color: black;
+    background-color: black;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-top:12px;
+    height:23px;
+    margin-left: 0.5em;
+}
+.header-middle span{
+    margin-top:12px;
+}
+
+/* HEADER - RIGHT part      padding: 0.5em 1.5em;*/
+
+.header-right {
+    display: flex;
+    grid-column: 11/13;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    padding-bottom: 1em;
+    padding-left: -1em;
+}
+
+li {
+    float: left;
+}
+
+.logo-farmersdog {
+    line-height: 60px;
+    height: 58px;
+    width: 58px;
+    margin-top:20px;
+}
+
+.button-search {
+    line-height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 0em;
+    margin-top:20px;
+}
+
+.fa-search {
+    padding-left: 0.80em;
+    padding-top: 1em;
+    line-height: 1.2em;
+    border-left: 1px solid rgb(247, 247, 247);
+    font-size: 1.3em;
+}
