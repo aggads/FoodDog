@@ -6,39 +6,71 @@
     padding: 0;
    
 }
+
 body{
 /*background-image: url("../dogfood9.jpg");*/
 width: 100%;
 }
-.btn {
-    border-radius: 0;
+a{
+    color: #ff8d6a;
+    background-color: transparent;
+    text-decoration: none;  
 }
+.block{
+    display: block;
+  }
 @media screen and (min-width: 1200px) {
-    #toto{
-        margin-left: -38px!important;
-        margin-right: 38px!important;
-    }
+
 }
     @media screen and (min-width: 768px) and (max-width: 991px) {
         .cardSM{
             margin-bottom: 4em!important;
         }  
+        #first>.card-img-top {
+            width: 100%!important;
+            height: 40vw!important;
+            object-fit: cover!important;
+            display: block!important;
+        }
+        #toto img.card-img-top {
+            width: 50%!important;
+            height: 20vw!important;
+            object-fit: cover!important;
+            display: block!important;
+        }
+        .mySecond img {
+            width: 70%!important;
+            height: 30vw!important;
+            object-fit: cover;
+            display: block!important;
+        }
+        .art{
+            margin-left: 0!important;
+        }
+        .cardText {
+            font-family: 'Open Sans', sans-serif!important;
+            font-weight: 900!important;
+            font-size: 0.7em!important;
+             margin-top: 0!important;
+        }
+        .frontside .card .card-body img {
+            width: 100%!important;
+            height: 25vw!important;
+            object-fit: cover!important;
+            display: block!important;
+        }
     }
-   /* .cardT{   
-    margin-left: 15px !important;
-    
-    }
-}
-*/
 
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+    #toto {
+        margin-left: -1%!important;
+    }
+    
+}
 @media (min-width: 0) {
     #secondSect{
         margin-left: 1.1em;
-    }
-    
-    
-  
-    
+    }  
   }
   @media (min-width: 576px) {
     .SeCardTitle{
@@ -52,30 +84,22 @@ width: 100%;
   }*/
   @media screen and (min-width: 992px) {
     .SeCardTitle{
-        margin-top: 0.4em!important;
-    
-    }
+        margin-top: 0.4em!important;   
+    }   
   }
   @media screen and (min-width: 1200px) {
-   /*  .mySecond {
-       margin-left: -14%!important;
-    } 
-    .unify{
-        margin-left: -14%!important;
-    }  */
 } 
-
-  
-
-  
+.btn {
+    border-radius: 0;
+}  
 h1{
     font-family: 'Crimson Text', serif;
     text-align: center;
     font-size: 300%;
 }
-.navbar-toggle {
+    .navbar-toggle {
     float: left;
-}
+    }
 
     .container {
         position: relative;
@@ -86,82 +110,39 @@ h1{
         width: 98%;
         height: 23vw;
         object-fit: cover;
+        display: block;
     }
-    /*.unify>.card-img-top{
-        width: 133%;
-        object-fit: cover;
-        margin-bottom: 3%;
-       
-        
-    }*/
     .unify{
         
         margin-right: 8%;
         
     }
-    /* .myCont{
-        background-color: aquamarine;
-    }
-   .container{
-        background-color: darkorange;
-    }
-    #first{
-        background-color: blueviolet;
-    }
-    
-    
-    /
-    /*#dodo>.card-img-top{
-        display: block;
-        margin: auto;background-color: coral;
-    }
-    .card{
-        background-color: blueviolet;
-    }
-    .card-body{
-        background-color: orange;
-    }
    
-    
-    #toto{
-       
-        background-color: azure;
-    } */
     .cardText{
         font-family: 'Open Sans', sans-serif;
-        font-weight: 800;
+        font-weight: bold;
         font-size: 0.7em;
         margin-top: 1.5em;
     }
     .card-title{
-        color: crimson;
-        font-size: 0.5em;
+        color: #ff8d6a;
+        font-size: 0.7em;
         margin-top: 2em;
         margin-bottom: 2em;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-
+        font-family: 'Open Sans Semibold', sans-serif;
+        font-weight: bold;
     }
-    #firsText{
-        
+    #firsText{        
         font-family:  'Open Sans', sans-serif;
         font-weight: 700;
-        font-size: 1.2em;
-        
-
+        font-size: 1.2em;        
     }
-    /*.square {
-        width: 100%;
-        padding-bottom: 100%;
-        background-size: cover;
-        background-position: center;
-        background-color: darkgray;
-    }*/
     .card{
         padding-bottom: 1em!important;
     }
     #toto>p.card-img{
-        background-color: coral;
+        background-color: #ff8d6a;
+        display: block;
     }
     .mt-3 {
         margin-top: 2em !important;
@@ -173,9 +154,8 @@ h1{
         margin-bottom: 2em; 
         line-height: 0; 
         text-align: left;
-        margin-right: 6em;
-        
-}
+        margin-right: 6em;        
+    }
     .text-divider span{
     background-color: #f5f5f5;
     padding: 1em;
@@ -183,33 +163,27 @@ h1{
     font-size: 0.6em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    letter-spacing: 0.06em;
-    
-      
+    letter-spacing: 0.06em;  
     }
     .text-divider:before{  
         content: " "; 
         display: block; 
         border-top: 1px solid #e3e3e3; 
-        border-bottom: 1px solid #f7f7f7;
-        
+        border-bottom: 1px solid #f7f7f7;    
     }
     .divid{
         margin-top: -2em;
     }
     .mySecond{
-       margin-top: 2.2em;
-       
+       margin-top: 2.2em;       
    }
    .SeCardTitle{
-    
-    /*margin-left: 1.4em;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     letter-spacing: 0.04em;
     margin-bottom: 4em;
-}
-.SeCardTitle5{
+    }
+    .SeCardTitle5{
     margin-top: -1em;
     /*margin-left: 0.9em;*/
     Line-Height: 1.3;
@@ -219,10 +193,9 @@ h1{
     letter-spacing: 0.04em;
     margin-bottom: 4em;
     color: black;
-}
-.SeCardText{
+    }
+    .SeCardText{
     margin-top: -3em;
-    /*margin-left: 1.1em;*/
     Line-Height: 1.6;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.7em;
@@ -262,28 +235,13 @@ h1{
     width: 22px;
     line-height: 22px;
     font-size: 1.4em;
-
-}
-#cont{
-    margin-left: -6%;
 }
 .art{
     margin-left: -2.5%;
 }
-     /*  #divf{
-         margin-right: 12px; background-color: chartreuse;
-      }
-img{
-    margin-bottom: 4px;
-}*/
-
-/* FontAwesome for working BootSnippet :> */
-
-
 #team {
     background: #eee !important;
 }
-
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #108d6f;
@@ -296,33 +254,27 @@ img{
     background-color: #007b5e;
     border-color: #007b5e;
 }
-
-/*section {
-    padding: 60px 0;
-}*/
-
 section .section-title {
     text-align: center;
     color: #007b5e;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-
 #team .card {
     border: none;
     background: #ffffff;
 }
-
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
+    /*-moz-transform: rotateY(0deg);*/
+    -moz-transform: rotateY(0);
     -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
     border-radius: .25rem;
-}
 
+}
 .image-flip:hover .frontside,
 .image-flip.hover .frontside {
     -webkit-transform: rotateY(180deg);
@@ -330,28 +282,28 @@ section .section-title {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-
 .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
     -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
+    /*-moz-transform: perspective(1000px);*/
+    transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: 1s;
     transform-style: preserve-3d;
     position: relative;
 }
-
 .frontside {
     position: relative;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
+   /* -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);*/
+    transform: rotateY(0);
+    transform: rotateY(0);
     z-index: 2;
     margin-bottom: 30px;
 }
-
 .backside {
     position: absolute;
     top: 0;
@@ -384,27 +336,21 @@ section .section-title {
     transition: 1s;
     transform-style: preserve-3d;
 }
-
 .frontside .card,
 .backside .card {
     min-height: 242px;
 }
-
-.backside .card a {
+/*.backside .card a {
     font-size: 18px;
     color: #007b5e !important;
-}
-
-/*.frontside .card .card-title,
-.backside .card .card-title {
-    color: crimson !important;
 }*/
-
 .frontside .card .card-body img {
-    width: 242px;
-    height: 166px;
-    /*border-radius: 50%;*/
+    width: 100%;
+    height: 13vw;
+    object-fit: cover;
+    display: block;
 }
+
 
 /*Footer start here */
 footer{
@@ -546,10 +492,14 @@ footer{
 }
 
 #categories hr{
-    width:90%;
+    width:70%;
     margin-left:0%;
     margin-top:10px;
     opacity:0.2;
+    grid-row: 2/3;
+    grid-column: 4/10;
+    align-self: start;
+    justify-self: center;
 }#community_first{
     position:relative;
     margin-left:10px;
@@ -620,6 +570,7 @@ li{
   margin-top:20px;
   width:57px;
   height:44px;
+  
 }
 #third_Article img{
   margin-top:20px;
@@ -641,30 +592,27 @@ li{
     height:56px;
     margin:1px;
 }
-#toto img.card-img-top{
-    width: 120%;
-    height: 11vw;
-    object-fit: cover;
-}
+/*FIN FOOTER*/
 #cont img{
     width: 98%;
     height: 13vw;
     object-fit: cover;
+    display: block;
 }
 #thirdSect .fa-facebook-f{
     margin-left: 0px;
-    color: coral;
+    color: #ff8d6a;
 }
 #thirdSect .fa-twitter{
     margin-left: 5px;
-    color: coral;
+    color: #ff8d6a;
 }
 #thirdSect .fa-instagram{
     margin-left: 5px;
-    color: coral;
+    color: #ff8d6a;
 }
 #thirdSect .backside .card-title {
-    color: coral;
+    color: #ff8d6a;
     font-size: 0.5em;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -713,7 +661,6 @@ and (max-device-width : 8000px){
     }#mobile_main{
         display:none;
     }
-<<<<<<< HEAD
 }
 #toto img.card-img-top{
     width: 99%;
@@ -1855,6 +1802,3 @@ and (max-device-width : 8000px){
 }
 **/
 >>>>>>> 4e25c44d1d5b5f1961cbbac82f67dcceaa620b99:css/styles.css
-=======
-}
->>>>>>> parent of fd55980... Push
