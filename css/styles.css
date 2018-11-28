@@ -1,3 +1,4 @@
+<<<<<<< HEAD:css/styles.css
 **{
     font-family: 'Crimson Text', serif;
     font-family: 'Open Sans', sans-serif;
@@ -827,7 +828,6 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     position: relative;
     left: 42%;
 }
-<<<<<<< HEAD
 =======
 **{
     font-family: 'Crimson Text', serif;
@@ -1858,5 +1858,3 @@ and (max-device-width : 8000px){
 =======
 }
 >>>>>>> parent of fd55980... Push
-=======
->>>>>>> parent of f232d09... bug fix
