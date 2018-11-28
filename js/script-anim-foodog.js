@@ -20,7 +20,7 @@
     }
 
 
-    TweenMax.fromTo('#first', 2.5, {
+    TweenMax.fromTo('#first',  2.5, {
       y: -100 // from state
     }, {
       y: 0 // to end state
@@ -33,14 +33,23 @@
     }, {
       y: 0 // to end state
     });
-    let myS = document.querySelector(".mySecond");
-    let mySa = myS.querySelector(".card");
+    
+    TweenMax.fromTo((".secondPart"), 2.5, {
+          y: -300 // from state
+        }, {
+          y: 0 // to end state
+        });
+          
+    
+        
+  
+    
 
-    TweenMax.fromTo(mySa, 2.5, {
-      y: -300 // from state
-    }, {
-      y: 0 // to end state
-    });
+      
+    
+      
+ 
+    
 
     TweenMax.fromTo(".image-flip", 2.5, {
       x: -200 // from state
