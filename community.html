@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/community.css">
+	<link rel="stylesheet" type="text/css" href="css/nutritionLifestyleWellnessCommunity.css">
 	<meta charset="utf-8">
+	<meta name="theme-color" content="#ffffff">
+	<script type="text/javascript" src="js/serviceWorker.js"></script>
+	<link rel="manifest" href="/manifest.json">
 	<!--MATERIALIZE  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -10,7 +13,7 @@
   	<link rel="stylesheet" href="css/mobile.css">
   	<link rel="stylesheet" href="css/tablets.css">
   	<link rel="stylesheet" href="css/style-foodog.css">
-	<title>COMMUNITY</title>
+	<title id="title_community">Community</title>
 <script type="text/javascript">
       var close=0;
 	function menu_mobile(){
@@ -29,6 +32,7 @@
 		}
 	}
 	</script>
+	<script type="text/javascript" src="js/communityAjax.js"></script>
 </head>
 <body>
 	<header id="top" class="header-grid-container">
@@ -36,23 +40,23 @@
 			<i class="fas fa-bars" onclick="menu_mobile()"></i>
 			<div id="container_menu_drop" class="hide1 hide_Subjets">
 			<ul id="drop_menu" >
-				<a href="index.html"><h4>WELCOME</h4></a>
+				<a name="home" href="index.html"><h4>WELCOME</h4></a>
 				<hr>
-				<li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="wellness.html">Wellness</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="community.html">Community</a></li>
+				<li><a name="nutrition" href="nutrition.html">Nutrition</a></li>
+                <li><a name="wellness" href="wellness.html">Wellness</a></li>
+                <li><a name="lifestyle" href="lifestyle.html">Lifestyle</a></li>
+                <li><a name="community" href="community.html">Community</a></li>
 			</ul>
 		</div>
 		</section>
         <section class="header-title">
-            <h1>FooDog</h1>
+            <a name="home" href="index.html"><h1>FooDog</h1></a>
         </section>
         <nav class="header-social-media">
             <ul class="logo-social-media">
-                <li class="hide1 hide_Subjets"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f "></i></a></li>
-                <li class="hide1 hide_Subjets"><a href="https://www.twitter.com/"><i class="fab fa-twitter "></i></a></li>
-                <li class="hide1 hide_Subjets"><a href="https://www.instagram.com/"><i class="fab fa-instagram "></i></a></li>
+                <li class="hide1 hide_Subjets"><a name="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-f "></i></a></li>
+                <li class="hide1 hide_Subjets"><a name="twitter" href="https://www.twitter.com/"><i class="fab fa-twitter "></i></a></li>
+                <li class="hide1 hide_Subjets"><a name="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram "></i></a></li>
                 <li><button aria-label="Launch Search Function" id="button-search-id" class="button-search"><i class="fas fa-search"></i></button></li>
             </ul>
 
@@ -67,10 +71,10 @@
         </nav>
         <nav class="header-site-menu">
             <ul class="menu-site">
-                <li class="hide1"><a href="nutrition.html">Nutrition</a></li>
-                <li class="hide1"><a href="wellness.html">Wellness</a></li>
-                <li class="hide1"><a href="lifestyle.html">Lifestyle</a></li>
-                <li class="hide1"><a href="community.html">Community</a></li>
+                <li class="hide1"><a name="nutrition" href="nutrition.html">Nutrition</a></li>
+                <li class="hide1"><a name="wellness" href="wellness.html">Wellness</a></li>
+                <li class="hide1"><a name="lifestyle" href="lifestyle.html">Lifestyle</a></li>
+                <li class="hide1"><a name="community" href="community.html">Community</a></li>
             </ul>
         </nav>
     </header>
@@ -85,123 +89,125 @@
 	      </aside>
 	      <section id="follows_pub">      		
 	      	</section>
-	 	<section id="all_Articles">
-	 	  <article id="First_Article">
-	 	 	<a href="singlePage.html"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	<section id="all_Articles" >
+	 		<!--
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="singlePage.html"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
 	 	 	 <a href="singlePage.html"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Second_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="title" href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Third_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="share" href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Fourth_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="title" href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Fifth_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="title" href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Sixth_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="title" href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Seventh_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a href="#" name="title"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article>
 	 	  <hr>
-	 	  <article id="Eighth_Article" class="Article">
-	 	 	<a href="#"><img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
+	 	  <article class="Article all_Articles">
+	 	 	<a name="img" href="#"><img alt="img" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/yJHJnz85-SCTmsF/Dog_Background.jpg"/></a>
 	 	 	<div class="column">
 	 	 		<div class="circle"></div>
 	 	 	 <p class="topic">NUTRITION<span>|</span></p>	
-	 	 	 <a href="#"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
+	 	 	 <a name="title" href="#" name="sub_Title"><h2 class="sub_Title" >THE 11 DOG FOOD LABEL TRICKS <br/>EVERY OWNER NEEDS TO KNOW</h2></a>
 	 	 	 <p class="resume">Le Lorem Ipsum est simplement du faux <br/>texte employé dans la composition <br/> et la mise en page avant impression.</p>
 	 	 	 <section class="share_">
-	 	 	 <div class="share_arrow"> <a href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
+	 	 	 <div class="share_arrow"> <a name="share" href="#"><i class="fas fa-share"></i></a></div><span>SHARE</span>
 	 	 	 </section>
 	 	 	</div>
 	 	  </article> 
-	 	  <hr>
-	 	    <nav id="change_page" class="hide">
-	 	 	<div id=one><a href="#">1</div></a>
-	 	 	<div id="two"><a href="#">2</div></a>
-	 	 	<div id=third><a href="#">3</div></a>
-	 	 	<div id="next"><a href="#"> > </a> </div>
-	 	 </nav>
-	 	 <a href="#"><nav id="mobile_back">
-	 	 	<img src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/I8WwGA3Yvgo-Tx6/backward-arrow.png">
-	 	 	<h3>back</h3>
-	 	 </nav></a>
+	 	  <hr>-->
+	 	
 	 	</section>
 	 </div>
+	 <nav id="change_page" class="hide">
+	 	 	<div id=one><a name="one" href="#">1</div></a>
+	 	 	<div id="two"><a name="two" href="#">2</div></a>
+	 	 	<div id=third><a name="third" href="#">3</div></a>
+	 	 	<div id="next"><a name="next" href="#"> > </a> </div>
+	 	 </nav>
+	 	 <a  name="return" href="#"><nav id="mobile_back">
+	 	 	<img alt="return" src="https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/I8WwGA3Yvgo-Tx6/backward-arrow.png">
+	 	 	<h3>back</h3>
+	 	 </nav></a>
 	<footer>
    <div class="row s12"  id="First_Block">
      <div class="col s12 m5 l5 hide1" id="first_col">
@@ -210,11 +216,11 @@
           <h3 id="title_footer">CATEGORIES</h3>
         </div>
         <ul>
-          <li><a href="community.html">Community</a></li><hr size="1">
-          <li><a href="#">Featured</a></li><hr size="1">
-          <li><a href="lifestyle.html">Lifestyle</a></li><hr size="1">
-          <li><a href="nutrition.html">Nutrition</a></li><hr size="1">
-          <li><a href="wellness.html">Wellness</a></li>
+          <li><a name="community"  href="community.html">Community</a></li><hr size="1">
+          <li><a name="Featured"  href="#">Featured</a></li><hr size="1">
+          <li><a name="lifestyle"  href="lifestyle.html">Lifestyle</a></li><hr size="1">
+          <li><a name="nutrition"  href="nutrition.html">Nutrition</a></li><hr size="1">
+          <li><a name="wellness" href="wellness.html">Wellness</a></li>
       </aside>
      </div>
     <div class="col s12 m2 l2  hide1" id="Second_Block">
@@ -223,48 +229,47 @@
           <h3 class="title_footer">POPULAR POSTS</h3>
         </div>
           <article id= "first_Article">
-            <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-            <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
+            <img  alt="first_Article"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+            <h3 id="title_First_Article"> <a name="title" href="#">5 Reasons Your Dog is Vomiting</a> </h3>
           </article>
           <article id="second_Article">
-            <img src="http://digest.thefarmersdog.com/wp-content/uploads/2016/08/110x85xhellohoku-4-110x85.png.pagespeed.ic.SwUvty9ust@2x.webp">
-             <h3 id="title_Second_Article"> <a href="#">Top 14 Fresh Snacks for Dogs</a></h3>
+            <img  alt="second_article" src="http://digest.thefarmersdog.com/wp-content/uploads/2016/08/110x85xhellohoku-4-110x85.png.pagespeed.ic.SwUvty9ust@2x.webp">
+             <h3 id="title_Second_Article"> <a name="title" href="#">Top 14 Fresh Snacks for Dogs</a></h3>
           </article>
           <article id="third_Article">
-            <img src="http://digest.thefarmersdog.com/wp-content/uploads/2018/01/110x85x,40jenikrauze-pet-food-labels-110x85.jpg.pagespeed.ic.N09OxZJIgN@2x.webp">
-            <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs Live Longer</a></h3>
+            <img alt="third_article"  src="http://digest.thefarmersdog.com/wp-content/uploads/2018/01/110x85x,40jenikrauze-pet-food-labels-110x85.jpg.pagespeed.ic.N09OxZJIgN@2x.webp">
+            <h3 id="title_Third_Article"> <a name="title" href="#">Why Skinny Dogs Live Longer</a></h3>
           </article>
       </aside>
     </div>
-    <div class="col s12 m2 l2">
+    <div class="col s12 m2 l2" id="third_footer">
       <aside id="instagram_pic " class="hide1">
         <div >
           <h3 class="title_footer  hide1">Instagram</h3>
         </div>
         <section id="instagram_Pictures">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
-         <img src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram"  src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
+         <img alt="instagram" src="http://digest.thefarmersdog.com/wp-content/uploads/2017/02/110x85x,40lifeofvi-vomit-110x85.jpg.pagespeed.ic.sQ8UPNT-C_@2x.webp">
         </section>
       </aside>
     </div>
    </div>
     <div class="row s12">
    <section id="Social_Network">
-   	<a href="#"> <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
-   	<a href="#"  > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
-   	<a href="#"  > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
-   	<a href="#top"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
+   	<a href="#" name="facebook"> <div id="facebook" ><i class="fab fa-facebook-f"></i></div></a>
+   	<a href="#" name="twitter" > <div id="twitter" ><i class="fab fa-twitter"></i></div></a>
+   	<a href="#" name="instagram" > <div id="instagram" ><i class="fab fa-instagram"></i></div></a>
+   	<a href="#top" name="up"> <div id="up"><i class="fas fa-sort-up"></i></div></a>
     <h1>Copyright © 2018 Foodog</h1>
    </section>
  </div>
 </footer>
 <script src="js/script-foodog.js"></script>
 </body>
-</html>

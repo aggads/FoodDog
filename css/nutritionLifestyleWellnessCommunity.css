@@ -369,8 +369,7 @@ footer{
 	background-color:white !important;
 	border:none !important;
 	box-shadow: none !important;
-	position:absolute;
-	bottom:-70%;
+	position:relative;
 }#change_page div{
 	width:25px;
 	height:25px;

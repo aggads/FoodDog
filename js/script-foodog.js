@@ -1,8 +1,7 @@
 let wholeWindow = document.getElementById('modalwindow');
-let btn = document.getElementById("button-search-id");
+let btn = document.getElementById("button-search-id logo-social-media1");
 let closeWindow = document.getElementsByClassName("search-close-window")[0]; 
-
-btn.onclick = function() {
+function search() {
     wholeWindow.style.display = "block";
 }
 

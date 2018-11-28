@@ -8,20 +8,23 @@
            for (let i in article.docs) {
                var output = '';
                var teste = article.docs[i].tagForArticle
-               console.log(teste)
+               //console.log(teste)
                for(let a in teste){
 
                if (teste[a] === 'community') {
+                  
                 var arr= teste[a]
                    console.log(arr)
-               
-
+                   let repeat=5;
+                   let startRepeat=0;
+                   while(startRepeat<repeat){
+                 
                    output +=
                        ` <article class="Article all_Articles">
         <img alt="img" src="${article.docs[i].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
-        <p class="topic">LIFESTYLE<span>|</span></p>
+        <p class="topic">Nutrition<span>|</span></p>
         <h2 class="sub_Title"> ${article.docs[i].title}</h2>
         <p class="resume"> ${article.docs[i].text}</p>
         <section class="share_">
@@ -32,7 +35,12 @@
       <hr>
         `
         document.getElementById('all_Articles').innerHTML = output;
+        
 
+            startRepeat++
+              
+              }
+              
                 }
                }   
            }

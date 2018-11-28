@@ -91,6 +91,8 @@ h1>a:hover {
     padding-right: 2.0em;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
+    top: 10px;
+    left: 10px;
 }
 
 .header-menu-socmed {
@@ -262,14 +264,14 @@ li {
     position: absolute;
     z-index: 1;
     padding-top: 150px;
-    left: 0;
+    right:0;
+    right:100%;
     top: 0;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    max-width: 100%;
-    max-height: 100%;
+
 }
 
 .search-modal-window-content {
@@ -1112,10 +1114,10 @@ and (max-device-width : 650px){
 	margin-top:60px;
 }#nutrition{
    font-size:20px;
-   margin-top: 20%;
+   margin-top: 12%;
    left:3%;
 }.button-search{
-	display:none;
+	display:block;
 }.logo-farmer{
 	display:none;
 }form{
@@ -1168,10 +1170,22 @@ and (max-device-width : 650px){
 	height:20px;
 }
 .header-left {
-    margin-top:100px;
+    margin-top:10px;
 }
 	#section_share p{
 	font-size:30px;
+}.menu-logo {
+    top: 3px;
+    position: relative;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(64, 64, 64);
+    margin: 10px;
+}.header-left h1 {
+    position: absolute;
+    margin-top: 12px!important; 
+    left: 40%!important;
+    font-size: 100px;
 }
 #section_share button{
 	font-size:25px;
@@ -1298,6 +1312,7 @@ and (max-device-width : 2000px){
 	width:300px;
 }.title_footer{
 	font-size:20px;
+	margin-left:0;
 }#popular_posts img{
 	width:60px;
 	height:60px;
@@ -1312,9 +1327,6 @@ and (max-device-width : 2000px){
 	position:relative;
     top: -100%;
     font-size:12px;    
-}#first_Article h3 a {
-	margin-top:10px;
-	font-size:12px;
 }#instagram_Pictures{
 	width:200px;
 	margin-top:10px;
@@ -1331,8 +1343,25 @@ and (max-device-width : 2000px){
 	bottom:1%;
 }.fa-sort-up{
 	font-size:40px;
-}#social_network{
-	
+}.hide{
+	display:none;
+}#title_footer{
+	left:0;
+}#title_First_Article{
+	font-size:14px!important;
+	margin-top:10px!important;
+}#title_Second_Article{
+	font-size:14px!important;
+}#title_Third_Article{
+	font-size:14px!important;
+}#first_Article img{
+	margin-left:0px;
+}#second_Article img{
+	margin-left:38px;
+}#third_Article img{
+	margin-left:38px;
+}#popular_posts{
+	width:400px;
 }
 }
 

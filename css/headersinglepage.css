@@ -5,7 +5,12 @@
     border-bottom: 0.01em solid rgb(204, 204, 204);
     margin-top: -0.2em;
 }
-
+.server_ajax{
+    display:block;
+}
+.server_ajax_hidden{
+    display: none;
+}
 ul {
     list-style-type: none;
 }
@@ -105,10 +110,9 @@ h1>a:hover {
     display: inline-block;
 }
 
-.header-menu-socmed a i {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+.header-menu-socmed .fa-facebook-f{
+    margin-top:10px;
+    position:relative;
 }
 
 .header-menu-socmed:hover {
