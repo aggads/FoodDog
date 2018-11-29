@@ -6,6 +6,18 @@
    
 }
 
+@font-face {
+    font-family: 'Crimson Text';
+  font-display: auto;
+  src: local('Crimson Text'), url(https://fonts.googleapis.com/css?family=Open+Sans) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+  font-display: auto;
+  src: local('Open Sans'), url(https://fonts.googleapis.com/css?family=Open+Sans) format('woff2');
+}
+
 body{
 width: 100%;
 }
