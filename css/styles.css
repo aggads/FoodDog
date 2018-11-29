@@ -383,7 +383,7 @@ footer{
 }
 #Second_Block{
     background-color:#3a3e43;
-    width:200px;
+    width:350px;
     left:20%;
     position:relative;
 }
@@ -465,19 +465,19 @@ footer{
     position:relative;
     align-self:center;
     color:white;
-    font-size:10px;
+    font-size:11px;
 }
 .fa-facebook-f{
   position:relative;
   align-self:center;
   color:white;
-  font-size:10px;
+  font-size:11px;
 }
 .fa-instagram{
     position:relative;
     align-self:center;
     color:white;
-    font-size:10px;
+    font-size:11px;
 }
 .fa-sort-up{
     position:relative;
@@ -519,7 +519,7 @@ li{
     list-style:none;
 }
 #title_footer{
-    font-size:8px;
+    font-size:11px;
     color:#a6a6a6;
     margin-bottom:5px;
     font-family: 'Open Sans', sans-serif;
@@ -529,7 +529,7 @@ li{
     position:relative;
 }
 .title_footer{
-    font-size:8px;
+    font-size:11px;
     color:#a6a6a6;
     margin-bottom:5px;
     margin-top:14px;
@@ -539,15 +539,15 @@ li{
     position:relative;
 }
 #first_Article a h3{
-    font-size:8px;
+    font-size:11px;
     color:white;
     position:relative;
     margin-top:0px;
     float:right;
-    line-height:10px;
+    line-height:11px;
     font-family: 'Open Sans', sans-serif;
-    font-weight:900;
-    right:20px;
+    font-weight:800;
+    right:15px;
     margin-right:10px;
     justify-content:flex-start;
 }
@@ -557,14 +557,14 @@ li{
 #first_Article img{
   width:57px;
   height:44px;
-  margin-left:-22px;
+  margin-left:-33px;
 }
 #second_Article a h3{
-    font-size:8px;
+    font-size:11px;
     color:white;
     position:relative;
     float:right;
-    line-height:10px;
+    line-height:11px;
     font-family: 'Open Sans', sans-serif;
     font-weight:900;
     margin-right:10px;  
@@ -577,11 +577,12 @@ li{
 }
 #third_Article img{
   margin-top:20px;
+  margin-left: -2px;
   width:57px;
   height:44px;
 }
 #third_Article a h3{
-    font-size:8px;
+    font-size:11px;
     color:white;
     margin-right:10px;
     position:relative;
