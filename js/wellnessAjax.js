@@ -9,7 +9,7 @@
     }
 
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
-   xhr.onload = function() {
+   xhr.onreadystatechange = function () {
        if (this.status == 200) {
            var article = JSON.parse(this.responseText);
            //console.log(article.docs[0].title);
