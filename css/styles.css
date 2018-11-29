@@ -9,6 +9,8 @@ body{
 width: 100%;
 }h5::first-letter{
     text-transform: uppercase;
+}h3::first-letter{
+    text-transform: uppercase;
 }
 a{
     color: #ff8d6a;

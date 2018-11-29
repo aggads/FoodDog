@@ -248,6 +248,33 @@
               }
                
               }
+              
+             /*  footer += `
+           <aside id="popular_posts">
+              <article id="first_Article">
+                <h3 class="title_footer" id="popular_post">POPULAR POSTS</h3>
+                <img alt="img" src="${articleLoop[1].imgUrl}">
+                <a name="title" href="#">
+                  <h3 id="title_First_Article"> 5 Reasons Your Dog is <br />Vomiting</</h3>
+                </a>
+              </article>
+              <article id="second_Article">
+                <img alt="img" src="${articleLoop[2].imgUrl}">
+                <a name="title" href="#">
+                  <h3 id="title_Second_Article">Top 14 Fresh Snacks for Dogs</</h3>
+                </a>
+              </article>
+              <article id="third_Article">
+                <img alt="img" src="${articleLoop[3].imgUrl}">
+                <a name="title_footer" href="#">
+                  <h3 id="title_Third_Article">Why Skinny Dogs Live Longer</h3>
+                </a>
+              </article>
+            </aside>
+
+        `
+        document.getElementById('Second_Block').innerHTML = footer;*/
+
              
 
             }
@@ -277,7 +304,6 @@ function changePage(obj){
               var wellness = '';
               var lifestyle = '';
               var nutrition = '';
-              var footer= '';
               var articleLoop = article[i]
               //console.log(articleLoop)
             for(let ii in articleLoop){
@@ -504,6 +530,32 @@ function changePage(obj){
               }
                
               }
+            /*  footer += `
+           <aside id="popular_posts">
+              <article id="first_Article">
+                <h3 class="title_footer" id="popular_post">POPULAR POSTS</h3>
+                <img alt="img" src="${articleLoop[1].imgUrl}">
+                <a name="title" href="#">
+                  <h3 id="title_First_Article"> 5 Reasons Your Dog is <br />Vomiting</</h3>
+                </a>
+              </article>
+              <article id="second_Article">
+                <img alt="img" src="${articleLoop[2].imgUrl}">
+                <a name="title" href="#">
+                  <h3 id="title_Second_Article">Top 14 Fresh Snacks for Dogs</</h3>
+                </a>
+              </article>
+              <article id="third_Article">
+                <img alt="img" src="${articleLoop[3].imgUrl}">
+                <a name="title_footer" href="#">
+                  <h3 id="title_Third_Article">Why Skinny Dogs Live Longer</h3>
+                </a>
+              </article>
+            </aside>
+
+        `
+        document.getElementById('Second_Block').innerHTML = footer;*/
+
              
 
             }
