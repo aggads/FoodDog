@@ -5,9 +5,22 @@
  url = url.get('id');
  var  output = '';
  var footer = '';
- var id;    
+ var id;  
+ let ii;  
+
+ function teste(obj){
+  //id=obj._id;
+  console.log(articleLoop[ii].url)
+                      console.log(id)
+                    }
    xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+
    //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
+   //var targetSinglePage = document.getElementsByClassName("sub_Title"); 
+//var targetSinglePage = document.getElementsByTagName("img");
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
+ // targetSinglePage.onclick =function(){console.log(id)};
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
    xhr.onload = function() {
 
        if (this.status == 200) {
@@ -19,6 +32,7 @@
               articleLoop= article[i]
            
             for(let ii in articleLoop){
+              var target=articleLoop[ii]
                 //console.log(articleLoop[ii].tagForArticle)
                 var tags = articleLoop[ii].tagForArticle;
 
@@ -26,12 +40,12 @@
                 for(let a=0;a<tags.length;a++){
                       var pickTag=tags[a];
                  if (pickTag == 'nutrition') {
-                  // console.log(articleLoop[ii]._id)
+                   console.log(articleLoop[ii]._id)
                    id=articleLoop[ii]._id;
-              
+                    
               output +=
                ` <article class="Article all_Articles">
-        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
+        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" onclick="teste(this)"/>
         <div class="column">
         <div class="circle"></div>
         <p class="topic">NUTRITION<span>|</span></p>
@@ -46,7 +60,9 @@
         `
          document.getElementById('all_Articles').innerHTML = output;
        }
+
        }
+
 
 
               }
@@ -76,11 +92,14 @@
               
                }
 
+
           
          }
 
 
+
        }
+
 
 function changePage(obj){
     //alert(obj.textContent);
@@ -140,10 +159,17 @@ function changePage(obj){
 
        }
        xhr.send();
-    }
-  xhr.send();
 
-        /* xhr.send();
+    }
+
+  xhr.send();
+//var targetSinglePage = document.getElementsByClassName("sub_Title"); 
+//var targetSinglePage = document.getElementsByTagName("img");
+
+ // targetSinglePage.onclick =function(){console.log(id)};
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
+       /* 
+        document.getElements
          teste.addEventListener('click',function () {
           console.log(id)
         alert("hello world")},false);*/
