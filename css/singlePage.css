@@ -458,6 +458,7 @@ header{
    color:#45484d;
    font-weight:900;
    font-size:21px;
+   text-transform: capitalize!important;
 }
 #mobile{
 	 font-family: 'Open Sans', sans-serif;
@@ -606,7 +607,13 @@ h1{
 #text_articule{
 	width:99%;
 	height:940px;
-	background-color:red;
+}
+.resume{
+	max-height:940px;
+	overflow: hidden;
+}
+p::first-letter{
+	text-transform: uppercase;
 }
 #section_share{
 	display:flex;
@@ -1112,6 +1119,7 @@ and (max-device-width : 650px){
 }#article_nutrition h1{
 	font-size:30px;
 	margin-top:60px;
+	text-transform: capitalize!important;
 }#nutrition{
    font-size:20px;
    margin-top: 12%;

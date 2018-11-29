@@ -1,13 +1,5 @@
-var numberForPage=1;
-
-  function changePage(obj){
-    //alert(obj.textContent);
-    numberForPage=obj.textContent;
-    console.log(numberForPage)
-
    var xhr = new XMLHttpRequest();
-   
-   xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+   xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {
        if (this.status == 200) {
            var article = JSON.parse(this.responseText);
@@ -22,14 +14,17 @@ var numberForPage=1;
               var tags=articleLoop[ii].tagForArticle;
               for(let a=0;a<tags.length;a++){
                 const pickTag=tags[a];
-              if (pickTag=='nutrition') {
+              if (pickTag=='wellness') {
                 var arr= pickTag
+                let startLoop=0;
+                let endLoop=5;
+                while(startLoop<endLoop){
                        output +=
                        ` <article class="Article all_Articles">
         <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
-        <p class="topic">NUTRITION<span>|</span></p>
+        <p class="topic">WELLNESS<span>|</span></p>
         <h2 class="sub_Title"> ${articleLoop[ii].title}</h2>
         <p class="resume"> ${articleLoop[ii].text}</p>
         <section class="share_">
@@ -41,8 +36,8 @@ var numberForPage=1;
         `
          document.getElementById('all_Articles').innerHTML = output;
 
-
-       
+                startLoop++;
+              }
        
                 //console.log("its working")
                 //console.log(arr)
@@ -79,7 +74,6 @@ var numberForPage=1;
 
          }
        }
-
 /*
            for (let i in article.docs) {
                var output = '';
@@ -109,6 +103,7 @@ var numberForPage=1;
       <hr>
         `
         document.getElementById('all_Articles').innerHTML = output;
+
                
                 }
                }   
@@ -116,5 +111,4 @@ var numberForPage=1;
        }
    }*/
    xhr.send();
-    }
 

@@ -15,6 +15,9 @@ header{
 	margin-left:100px;
 	position:absolute;F
 }
+p::first-letter{
+	text-transform: uppercase;
+}
 .share_arrow a{
     color: black!important;
 }.show{
@@ -139,6 +142,7 @@ header{
 	margin-top:10px;
 	color:#4b4f54;
 	position:relative;
+	text-transform: capitalize;
 }#column{
 	display:flex;
 	flex-direction:column;
@@ -375,7 +379,7 @@ footer{
 	height:25px;
 	border-radius:50%;
 	background-color:white;
-    color:white;
+    color:gray!important;
 	-webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color:#bababa;
     font-size:10px;
@@ -384,10 +388,10 @@ footer{
 	align-items: center;
 	display:flex;
 	margin-right:5px;
-	border:solid #bababa 1px;
+	border:solid #4b4f54 1px;
 	position:relative;
 	left:42%;
-}#change_page nav a{
+}#change_page  a{
 	color:gray!important;
 }#change_page div:hover{
 	background-color:#4b4f54;
