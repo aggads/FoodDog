@@ -269,17 +269,23 @@
         </section>
         <!-- SECOND SECTION -->
         <section id="secondSect" class=" masked">
-          <div class="container-fluid">
+              <div class="container-fluid">
             <div class="row">
               <div class=" col-md-6 col-md-offset-2  col-sm-10 col-sm-offset-1">
-
+                <div class="">
+                  <h5 class="text-divider col-md-12"><span>FEATURED POSTS</span></h5>
+                </div>
+              </div>
+              <div class="row"  id="articleAjaxFeatured">
+         <!-- <div class="container-fluid">
+            <div class="row">
+              <div class=" col-md-6 col-md-offset-2  col-sm-10 col-sm-offset-1">
                 <div class="">
                   <h5 class="text-divider col-md-12"><span>FEATURED POSTS</span></h5>
                 </div>
               </div>
               <div class="row">
                 <div class=" col-md-6 col-md-offset-2  col-sm-10 col-sm-offset-1">
-
                   <div class=" mySecond  ">
                     <div id="cont">
                       <div class="card secondPart  md-whiteframe-8dp">
@@ -299,7 +305,7 @@
                                 labore et
                                 dolore magna aliqua. </p>
                               <a name="share" href="#" class="share"><i class="fas fa-share"></i>SHARE </a>
-                            </div>
+                            </div>--
                           </div>
 
                         </div>
@@ -361,7 +367,10 @@
                     </div>
                   </div>
                 </div>
-                <!-- ASIDE -->
+                ASIDE -->
+
+              </div>
+              </div>
                 <aside id="aside" class="col-md-3 clearfix visible-lg">
                   <div class="col-lg-10 ">
 
@@ -377,8 +386,6 @@
 
                   </div>
                 </aside>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -393,7 +400,9 @@
                 </div>
 
                 <!-- card1 -->
-                <div class=" col-sm-6 col-md-6 ">
+                <div id="thirSectionNutrition">
+               
+               <!-- <div class=" col-sm-6 col-md-6 ">
 
                   <div class="image-flip">
 
@@ -444,10 +453,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>-->
+              </div>
                 <!-- card1 -->
                 <!-- card2 -->
-                <div class=" col-sm-6 col-md-6 ">
+               <!-- <div class=" col-sm-6 col-md-6 ">
                   <div class="image-flip">
 
                     <div class="mainflip">
@@ -497,11 +507,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>-->
 
                 <!-- card2 -->
                 <!-- card3 -->
-                <div class=" col-sm-6 col-md-6 ">
+                <!--<div class=" col-sm-6 col-md-6 ">
                   <div class="image-flip">
 
                     <div class="mainflip">
@@ -551,10 +561,10 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>-->
                 <!-- card3 -->
                 <!-- card4 -->
-                <div class=" col-sm-6 col-md-6 ">
+               <!-- <div class=" col-sm-6 col-md-6 ">
                   <div class="image-flip">
 
                     <div class="mainflip">
@@ -604,7 +614,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>-->
                 <!-- card4 -->
 
 
@@ -615,10 +625,10 @@
         </section>
         <hr>
         <nav id="change_page">
-          <div id=one><a name="one" href="#">1</div></a>
-          <div id="two"><a name="two" href="#">2</div></a>
-          <div id=third><a name="third" href="#">3</div></a>
-          <div id="next"><a name="next" href="#"> > </a> </div>
+          <div onclick="changePage(this)" id=one><a name="one" href="#">1</div></a>
+          <div onclick="changePage(this)" id="two"><a name="two" href="#">2</div></a>
+          <div onclick="changePage(this)" id=third><a name="third" href="#">3</div></a>
+          <div onclick="changePage(this)" id="next"><a name="next" href="#"> > </a> </div>
         </nav>
       </div>
 

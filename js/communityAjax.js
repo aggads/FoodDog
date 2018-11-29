@@ -1,40 +1,37 @@
 
-   var xhr = new XMLHttpRequest();
-   var url = new URLSearchParams(window.location.search); 
-     url=url.get('id'); 
-    var id;
-    function takeId(){
-      console.log(id)
-       window.location.href =  'singlePage.html?' +'id='+this.id ;
-    }
-
-   xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
+ var xhr = new XMLHttpRequest();
+ var articleLoop = '';
+ var url = new URLSearchParams(window.location.search);
+ url = url.get('id');
+ var  output = '';
+ var footer = '';
+ var id;    
+   xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+   //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {
+
        if (this.status == 200) {
            var article = JSON.parse(this.responseText);
            //console.log(article.docs[0].title);
-           for(let t in article.docs){
-
-
-           id=article.docs[t]._id;
+  
             for (let i in article) {
-              var output = '';
-              var footer= '';
-              var articleLoop = article[i]
-              //console.log(articleLoop)
+              //console.log(article[i])
+              articleLoop= article[i]
+           
             for(let ii in articleLoop){
-             // console.log(articleLoop[ii].tagForArticle)
-              var tags=articleLoop[ii].tagForArticle;
-              for(let a=0;a<tags.length;a++){
-                const pickTag=tags[a];
-              if (pickTag=='community') {
-                var arr= pickTag
-                let startLoop=0;
-                let endLoop=5;
-                while(startLoop<endLoop){
-                       output +=
-                       ` <article class="Article all_Articles">
-        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px"  onclick="takeId()"/>
+                //console.log(articleLoop[ii].tagForArticle)
+                var tags = articleLoop[ii].tagForArticle;
+
+
+                for(let a=0;a<tags.length;a++){
+                      var pickTag=tags[a];
+                 if (pickTag == 'community') {
+                  // console.log(articleLoop[ii]._id)
+                   id=articleLoop[ii]._id;
+              
+              output +=
+               ` <article class="Article all_Articles">
+        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
         <p class="topic">COMMUNITY<span>|</span></p>
@@ -48,21 +45,12 @@
       <hr>
         `
          document.getElementById('all_Articles').innerHTML = output;
+       }
+       }
 
-                startLoop++;
-              }
-              }
-       
-                //console.log("its working")
-                //console.log(arr)
-              }//else{
-                //console.log("is not working")
-             // }
-              }
-             
 
-            }
-                footer += `
+              }
+              footer += `
              <aside id="popular_posts">
         
         <div >
@@ -84,32 +72,51 @@
 
         `
         document.getElementById('Second_Block').innerHTML = footer;
-          }
+               }
 
+          
          }
+
+
        }
 
-/*
-           for (let i in article.docs) {
-               var output = '';
-               var teste = article.docs[i].tagForArticle;
-               console.log(teste)
-               for(let a in teste){
+function changePage(obj){
+    //alert(obj.textContent);
+    numberForPage=obj.textContent;
+    console.log(numberForPage)
 
-                   var arr= teste[a]
-                   console.log(arr)
-                 for(let ii=0;ii<arr.length;i++){
-            
-                          // console.log(arr[i])
 
-                   output +=
-                       ` <article class="Article all_Articles">
-        <img alt="img" src="${article.docs[i].imgUrl}" width="500px" height="500px" />
+    xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+   //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
+   xhr.onload = function() {
+
+       if (this.status == 200) {
+           var article = JSON.parse(this.responseText);
+           //console.log(article.docs[0].title);
+  
+            for (let i in article) {
+              //console.log(article[i])
+              articleLoop= article[i]
+           
+            for(let ii in articleLoop){
+                //console.log(articleLoop[ii].tagForArticle)
+                var tags = articleLoop[ii].tagForArticle;
+
+
+                for(let a=0;a<tags.length;a++){
+                      var pickTag=tags[a];
+                 if (pickTag == 'community') {
+                  // console.log(articleLoop[ii]._id)
+                   id=articleLoop[ii]._id;
+              
+              output +=
+               ` <article class="Article all_Articles">
+        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
-        <p class="topic">LIFESTYLE<span>|</span></p>
-        <h2 class="sub_Title"> ${article.docs[i].title}</h2>
-        <p class="resume"> ${article.docs[i].text}</p>
+        <p class="topic">COMMUNITY<span>|</span></p>
+        <h2 class="sub_Title"> ${articleLoop[ii].title}</h2>
+        <p class="resume"> ${articleLoop[ii].text}</p>
         <section class="share_">
        <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
@@ -117,13 +124,27 @@
       </article>
       <hr>
         `
-        document.getElementById('all_Articles').innerHTML = output;
-
-               
-                }
-               }   
-           }
+         document.getElementById('all_Articles').innerHTML = output;
        }
-   }*/
-   xhr.send();
+       }
+
+
+              }
+
+               }
+              
+         }
+
+
+       }
+       xhr.send();
+    }
+  xhr.send();
+
+        /* xhr.send();
+         teste.addEventListener('click',function () {
+          console.log(id)
+        alert("hello world")},false);*/
+
+ 
 
