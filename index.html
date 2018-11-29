@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zxx">
 
 <head>
@@ -24,48 +24,6 @@
   </style>
 
   <title>FooDog</title>
-  <script type="text/javascript">
-    var close = 0;
-    function menu_mobile() {
-      if (close == 0) {
-        document.getElementById("container_menu_drop").classList.remove("hide1");
-        document.getElementById("container_menu_drop").classList.add("show");
-        document.getElementById("container_menu_drop").classList.remove("hide_Subjets");
-        document.getElementById("container_menu_drop").classList.add("show");
-        close++;
-      } else if (close == 1) {
-        document.getElementById("container_menu_drop").classList.remove("show");
-        document.getElementById("container_menu_drop").classList.add("hide1");
-        document.getElementById("container_menu_drop").classList.remove("show");
-        document.getElementById("container_menu_drop").classList.add("hide_Subjets");
-        close--;
-      }
-    }
-    function fixedHeader() {
-      document.getElementById("mobile_show").classList.remove("masked_loadpage");
-      document.getElementById("mobile_show").classList.add("show_loadpage");
-      document.getElementById("mobile_main").classList.add("masked_loadpage");
-    }
-    function change_post_best() {
-      document.getElementById("firstSect").classList.add("show");
-      document.getElementById("secondSect").classList.add("masked");
-      document.getElementById("thirdSect").classList.add("masked");
-      document.getElementById("secondSect").classList.remove("show");
-      document.getElementById("thirdSect").classList.remove("show");
-    } function change_post_Featured() {
-      document.getElementById("secondSect").classList.add("show");
-      document.getElementById("firstSect").classList.add("masked");
-      document.getElementById("thirdSect").classList.add("masked");
-      document.getElementById("firstSect").classList.remove("show");
-      document.getElementById("thirdSect").classList.remove("show");
-    } function change_post_Latest() {
-      document.getElementById("thirdSect").classList.add("show");
-      document.getElementById("secondSect").classList.add("masked");
-      document.getElementById("firstSect").classList.add("masked");
-      document.getElementById("firstSect").classList.remove("show");
-      document.getElementById("secondSect").classList.remove("show");
-    }
-  </script>
   <style type="text/css">
     .masked_loadpage {
       display: none;
@@ -87,7 +45,7 @@
     <section id="first_page_mobile">
       <div id="mobile_main_image"></div>
       <h1>FooDog</h1>
-      <a id="header" href="#firstSect"><i class="fas fa-angle-down" onclick="fixedHeader()"></i></a>
+      <a name="header" href="#firstSect"><i class="fas fa-angle-down" onclick="fixedHeader()"></i></a>
     </section>
   </main>
   <div id="mobile_show" class="masked_loadpage">
@@ -154,13 +112,13 @@
           <div class="container-fluid">
             <div class="row">
               <div id="mobile_first" class="myCont  col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                <div id="FirstArt" class="col-md-6 ">
+                <div id="dodo" class="col-md-6 ">
                   <div id="divf">
                     <div>
                       <div id="first" class="card md-whiteframe-8dp unify">
 
-                        <a class="block" href="singlePage.html">
-                          <img alt="card" id="photo" class="card-img-top center-block img-responsive" src="dogd.jpg"></a>
+                        <a name="article" class="block" href="singlePage.html">
+                          <img alt="card" id="photo" class="card-img-top center-block img-responsive" src="dogd.jpg" alt="Card image cap"></a>
                         <div class="card-body ">
                           <h5 class="card-title text-center"><a name="wellness" href="wellness.html">WELLNESS</a></h5>
                           <p id="firsText" class="card-text text-center">5 REASONS YOUR DOG IS VOMITING</p>
@@ -170,11 +128,11 @@
                     </div>
                   </div>
                 </div>
-                <div id="deuxArt" class="col-lg-6 col-md-8 col-sm-10 ">
+                <div id="toto" class="col-lg-6 col-md-8 col-sm-10 ">
                   <div class="card  col-lg-5 col-md-6">
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                         <p class="hide_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -186,7 +144,7 @@
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
+                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                       </div>
@@ -197,7 +155,7 @@
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                         <p class="hide_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -209,7 +167,7 @@
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                       </div>
@@ -220,7 +178,7 @@
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                         <p class="hide_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -232,7 +190,7 @@
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                       </div>
@@ -245,7 +203,7 @@
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid  col-sm-5" src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                         <p class="hide_mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -257,7 +215,7 @@
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
                       <a name="singlepage" class="block" href="singlePage.html">
-                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg"></a>
+                        <img alt="card" class="card-img-top img-fluid " src="dogd.jpg" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">OP FRESH SNACKS FOR DOGS</p>
                       </div>
@@ -288,11 +246,11 @@
 
                   <div class=" mySecond  ">
                     <div id="cont">
-                      <div class="card secondPart  md-whiteframe-8dp">
+                      <div class="card  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
                             <a name="single" class="block" href="singlePage.html">
-                              <img src="dogd.jpg" alt="image-dog"></a>
+                              <img alt="dogd" src="dogd.jpg" class="w-100" alt="image-dog"></a>
                           </div>
                           <div class="col-md-5   art">
                             <div class="card-block ">
@@ -315,11 +273,11 @@
                         <div class="text-divider "></div>
                       </div>
 
-                      <div class="card secondPart md-whiteframe-8dp">
+                      <div class="card  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
                             <a name="single" class="block" href="singlePage.html">
-                              <img src="dogd.jpg" alt="image-dog"></a>
+                              <img alt="dogd" src="dogd.jpg" class="w-100" alt="image-dog"></a>
                           </div>
                           <div class="col-md-5   art">
                             <div class="card-block ">
@@ -342,11 +300,11 @@
                         <div class="text-divider "></div>
                       </div>
 
-                      <div class="card secondPart md-whiteframe-8dp">
+                      <div class="card  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
                             <a name="singlepage" class="block" href="singlePage.html">
-                              <img src="dogd.jpg" alt="image-dog"></a>
+                              <img src="dogd.jpg" class="w-100" alt="image-dog"></a>
                           </div>
                           <div class="col-md-5   art">
                             <div class="card-block ">
@@ -385,7 +343,6 @@
                 </aside>
               </div>
             </div>
-          </div>
         </section>
 
         <!-- THIRD SECTION -->
@@ -407,8 +364,8 @@
                       <div class="frontside">
                         <div class="card  ">
                           <div class="card-body text-center">
-                            <p><a name="singlepage" class="block" href="singlePage.html">
-                                <img class=" img-fluid" src="dogd.jpg" alt="card image"></a></p>
+                            <p><a name="singlepage" class="block" href="singlePage.html"><img alt="img" class=" img-fluid"
+                                  src="dogd.jpg" alt="card image"></a></p>
                             <h4 class="card-title SeCardTitle">NUTRITION</h4>
                             <h5 class="card-title SeCardTitle5">THE TRUTH ABOUT TABLE SCRAPS FOR DOGS</h5>
                             <p class="card-text SeCardText">Consectetur adipiscing elit, sed do eiusmod tempor
@@ -460,8 +417,8 @@
                       <div class="frontside">
                         <div class="card">
                           <div class="card-body text-center">
-                            <p><a name="singlepage" class="block" href="singlePage.html">
-                                <img class=" img-fluid" src="dogd.jpg" alt="card image"></a></p>
+                            <p><a name="singlepage" class="block" href="singlePage.html"><img alt="card" class=" img-fluid"
+                                  src="dogd.jpg" alt="card image"></a></p>
                             <h4 class="card-title SeCardTitle"><a name="nutrition" href="nutrition.html">NUTRITION</a></h4>
                             <h5 class="card-title SeCardTitle5">THE TRUTH ABOUT TABLE SCRAPS FOR DOGS</h5>
                             <p class="card-text SeCardText">Consectetur adipiscing elit, sed do eiusmod tempor
@@ -567,8 +524,8 @@
                       <div class="frontside">
                         <div class="card">
                           <div class="card-body text-center">
-                            <p><a name="block" class="block" href="singlePage.html">
-                                <img class=" img-fluid" src="dogd.jpg" alt="card image"></a></p>
+                            <p><a name="block" class="block" href="singlePage.html"><img alt="card" class=" img-fluid"
+                                  src="dogd.jpg" alt="card image"></a></p>
                             <h4 class="card-title SeCardTitle"><a name="nutrition" href="nutrition.html">NUTRITION</a></h4>
                             <h5 class="card-title SeCardTitle5">THE TRUTH ABOUT TABLE SCRAPS FOR DOGS</h5>
                             <p class="card-text SeCardText">Consectetur adipiscing elit, sed do eiusmod tempor
@@ -634,9 +591,9 @@
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -722,7 +679,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/script-foodog.js"></script>
+    <script src="js/script-foodog.js" defer></script>
     <script src="js/script-anim-foodog.js"></script>
 
 </body>
