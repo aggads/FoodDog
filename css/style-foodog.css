@@ -84,6 +84,8 @@
         padding: 1em 1.1em;
         text-decoration: none;
         letter-spacing: 0.048em;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 
     /* Header - Social media */

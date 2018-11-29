@@ -10,21 +10,38 @@
 
   <!-- Bootstrap CSS -->
   <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" defer>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" defer>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" defer>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet" defer>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/style-foodog.css">
-  <link rel="stylesheet" href="css/style-anim.css">
-  <style>
-
-  </style>
+    crossorigin="anonymous" media="screen" defer>
+  <link rel="stylesheet" href="css/styles.css" media="screen" >
+  <link rel="stylesheet" href="css/style-foodog.css" media="screen" defer>
+  <link rel="stylesheet" href="css/style-anim.css" media="screen" defer>
+  <meta name="Description" content="A website about dogs and their tasty food">
 
   <title>FooDog</title>
-  <script type="text/javascript">
+  
+  <style type="text/css">
+    .masked_loadpage {
+      display: none;
+    }
+
+    .show_loadpage {
+      display: block;
+    }
+
+    .logo {
+      width: 100px;
+    }
+  </style>
+  <script type="text/javascript" src="js/ajaxIndex.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" defer>
     var close = 0;
     function menu_mobile() {
       if (close == 0) {
@@ -66,24 +83,6 @@
       document.getElementById("secondSect").classList.remove("show");
     }
   </script>
-  <style type="text/css">
-    .masked_loadpage {
-      display: none;
-    }
-
-    .show_loadpage {
-      display: block;
-    }
-
-    .logo {
-      width: 100px;
-    }
-  </style>
-  <script type="text/javascript" src="js/ajaxIndex.js"></script>
-</head>
-
-<body>
-
   <main id="mobile_main">
     <section id="first_page_mobile">
       <div id="mobile_main_image"></div>
@@ -114,9 +113,9 @@
       </section>
       <nav class="header-social-media">
         <ul class="logo-social-media">
-          <li><a name="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-f logo-social-media1"></i></a></li>
-          <li><a name="twitter" href="https://www.twitter.com/"><i class="fab fa-twitter logo-social-media1"></i></a></li>
-          <li><a name="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram logo-social-media1"></i></a></li>
+          <li><a aria-label="Facebook Logo" name="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook-f logo-social-media1"></i></a></li>
+          <li><a aria-label="Twitter Logo" name="twitter" href="https://www.twitter.com/"><i class="fab fa-twitter logo-social-media1"></i></a></li>
+          <li><a aria-label="Instagram Logo" name="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram logo-social-media1"></i></a></li>
           <li><button aria-label="Launch Search Function" id="button-search-id logo-social-media1" class="button-search"><i
                 class="fas fa-search"></i></button></li>
         </ul>
@@ -282,7 +281,7 @@
                 <div class=" col-md-6 col-md-offset-2  col-sm-10 col-sm-offset-1">
 
                   <div class=" mySecond  ">
-                    <div id="cont">
+                    <div id="cont-abc">
                       <div class="card secondPart  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
@@ -363,7 +362,7 @@
                   </div>
                 </div>
                 <!-- ASIDE -->
-                <aside id="aside" class="col-md-3 clearfix visible-lg">
+                <aside id="aside-social" class="col-md-3 clearfix visible-lg">
                   <div class="col-lg-10 ">
 
                     <a name="btn" class="btn btn-block btn-social btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
@@ -424,18 +423,18 @@
                               dolore magna aliqua.</p>
                             <ul class="list-inline">
                               <li class="list-inline-item text-xs-center">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a name="social-icon" aria-label="social icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-facebook-f"></i>
                                 </a>
                               </li>
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a name="social-icon" aria-label="social icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-twitter"></i>
                                 </a>
                               </li>
 
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a name="social-icon" aria-label="social icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-instagram"></i>
                                 </a>
                               </li>
@@ -477,18 +476,18 @@
                               dolore magna aliqua.</p>
                             <ul class="list-inline">
                               <li class="list-inline-item text-xs-center">
-                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-facebook-f"></i>
                                 </a>
                               </li>
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-twitter"></i>
                                 </a>
                               </li>
 
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-instagram"></i>
                                 </a>
                               </li>
@@ -531,18 +530,18 @@
                               dolore magna aliqua.</p>
                             <ul class="list-inline">
                               <li class="list-inline-item text-xs-center">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-facebook-f"></i>
                                 </a>
                               </li>
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-twitter"></i>
                                 </a>
                               </li>
 
                               <li class="list-inline-item">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-instagram"></i>
                                 </a>
                               </li>
@@ -584,18 +583,18 @@
                               dolore magna aliqua.</p>
                             <ul class="list-inline">
                               <li class="list-inline-item text-xs-center">
-                                <a name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-facebook-f"></i>
                                 </a>
                               </li>
                               <li class="list-inline-item">
-                                <a name="social-icon_twitter" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="social-icon_twitter" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-twitter"></i>
                                 </a>
                               </li>
 
                               <li class="list-inline-item">
-                                <a name="instagram" class="social-icon text-xs-center" target="_blank" href="#">
+                                <a aria-label="social icon" name="instagram" class="social-icon text-xs-center" target="_blank" href="#">
                                   <i class="fab fa-instagram"></i>
                                 </a>
                               </li>
@@ -627,9 +626,9 @@
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -652,6 +651,7 @@
                 <li><a name="nutrition" href="nutrition.html">Nutrition</a></li>
                 <hr size="1">
                 <li><a name="wellness" href="wellness.html">Wellness</a></li>
+              </ul>
             </aside>
           </div>
           <div class="col s12 m2 l2 " id="Second_Block">
@@ -698,16 +698,16 @@
         </div>
         <div class="row s12">
           <section id="Social_Network" class="col s12 m5 l5">
-            <a name="facebook" href="#">
+            <a aria-label="Facebook Logo" name="facebook" href="#">
               <div id="facebook"><i class="fab fa-facebook-f"></i></div>
             </a>
-            <a name="twitter" href="#">
+            <a aria-label="Twitter Logo" name="twitter" href="#">
               <div id="twitter"><i class="fab fa-twitter"></i></div>
             </a>
-            <a name="instagram" href="#">
+            <a aria-label="Instagram Logo" name="instagram" href="#">
               <div id="instagram"><i id="insta" class="fab fa-instagram"></i></div>
             </a>
-            <a name="up" href="#top">
+            <a aria-label="Go up" name="up" href="#top">
               <div id="up"><i class="fas fa-sort-up"></i></div>
             </a>
             <h1>Copyright © 2018 Foodog</h1>
