@@ -252,19 +252,19 @@ footer{
 	position:relative;
 	align-self:center;
 	color:white;
-	font-size:11px;
+	font-size:10px;
 }
 .fa-facebook-f{
   position:relative;
   align-self:center;
   color:white;
-  font-size:11px;
+  font-size:10px;
 }
 .fa-instagram{
 	position:relative;
 	align-self:center;
 	color:white;
-	font-size:11px;
+	font-size:10px;
 }
 .fa-sort-up{
 	position:relative;
@@ -272,7 +272,7 @@ footer{
 	color:white;
 }
 #title_footer{
-    font-size:11px;
+    font-size:8px;
 	color:#a6a6a6;
 	margin-bottom:5px;
 	margin-top:14px;
@@ -282,7 +282,7 @@ footer{
 	position:relative;
 }
 .title_footer{
-	font-size:11px;
+	font-size:8px;
 	color:#a6a6a6;
 	margin-bottom:5px;
 	margin-top:14px;
@@ -296,7 +296,7 @@ footer{
 	left:53%;
 	height:248px;
 	max-height:248px;
-	font-size:11px;
+	font-size:8px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:900;
 	margin-top:30px;
@@ -306,7 +306,7 @@ footer{
 	left:-30%;
 	height:248px;
 	max-height:248px;
-	font-size:11px;
+	font-size:8px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:900;
 	margin-top:30px;
@@ -316,7 +316,7 @@ footer{
 	left:-30%;
 	height:248px;
 	max-height:248px;
-	font-size:11px;
+	font-size:8px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:900;
 	margin-top:30px;
@@ -346,7 +346,7 @@ ul li a{
  display:flex;
 }
 #first_Article h3 a{
-	font-size:11px;
+	font-size:8px;
 	color:white;
 	position:absolute;
 	top:10%;
@@ -361,7 +361,7 @@ ul li a{
   margin-right:10px;
 }
 #second_Article h3 a{
-	font-size:11px;
+	font-size:8px;
 	color:white;
 	position:absolute;
 	top:22%;
@@ -384,7 +384,7 @@ ul li a{
 	margin-right:10px;
 }
 #third_Article h3 a{
-	font-size:11px;
+	font-size:8px;
 	color:white;
 	position:absolute;
 	top:40%;
@@ -412,7 +412,7 @@ ul li a{
     color:white;
 	-webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color:#bababa;
-    font-size:11px;
+    font-size:10px;
 	justify-content:center;
 	align-self: center;
 	align-items: center;
