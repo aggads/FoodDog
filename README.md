@@ -95,4 +95,3 @@ Page published
 
 
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://www.linkedin.com/in/samy-aggad-it/)
-Área de anexos
