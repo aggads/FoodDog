@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Crimson Text', serif;
-  font-display: auto;
+  font-family: 'Crimson Text', serif;
+  font-display: swap;
   src: url(https://fonts.googleapis.com/css?family=Open+Sans) format('woff2');
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
-  font-display: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-display: swap;
   src: url(https://fonts.googleapis.com/css?family=Open+Sans) format('woff2');
 }
 
