@@ -1,24 +1,40 @@
+
    var xhr = new XMLHttpRequest();
+   var url = new URLSearchParams(window.location.search); 
+     url=url.get('id'); 
+    var id;
+    function takeId(){
+      console.log(id)
+       window.location.href =  'singlePage.html?' +'id='+this.id ;
+    }
+
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {
        if (this.status == 200) {
            var article = JSON.parse(this.responseText);
            //console.log(article.docs[0].title);
+           for(let t in article.docs){
+
+
+           id=article.docs[t]._id;
             for (let i in article) {
               var output = '';
               var footer= '';
               var articleLoop = article[i]
               //console.log(articleLoop)
             for(let ii in articleLoop){
-              //console.log(articleLoop[ii].tagForArticle)
+             // console.log(articleLoop[ii].tagForArticle)
               var tags=articleLoop[ii].tagForArticle;
               for(let a=0;a<tags.length;a++){
                 const pickTag=tags[a];
               if (pickTag=='lifestyle') {
                 var arr= pickTag
+                let startLoop=0;
+                let endLoop=5;
+                while(startLoop<endLoop){
                        output +=
                        ` <article class="Article all_Articles">
-        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
+        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px"  onclick="takeId()"/>
         <div class="column">
         <div class="circle"></div>
         <p class="topic">LIFESTYLE<span>|</span></p>
@@ -33,8 +49,9 @@
         `
          document.getElementById('all_Articles').innerHTML = output;
 
-
-       
+                startLoop++;
+              }
+              }
        
                 //console.log("its working")
                 //console.log(arr)
@@ -71,6 +88,7 @@
 
          }
        }
+
 /*
            for (let i in article.docs) {
                var output = '';
@@ -100,6 +118,7 @@
       <hr>
         `
         document.getElementById('all_Articles').innerHTML = output;
+
                
                 }
                }   

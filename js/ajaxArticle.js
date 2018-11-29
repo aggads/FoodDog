@@ -1,3 +1,22 @@
+
+function changePage(obj){
+    //alert(obj.textContent);
+    var numberForPage=obj.textContent;
+    console.log(numberForPage)
+
+   var xhr = new XMLHttpRequest();
+   var url = new URLSearchParams(window.location.search); 
+     url=url.get('id'); 
+    var id;
+    function takeId(){
+      console.log(id)
+       window.location.href =  'singlePage.html?' +'id='+this.id ;
+   
+   
+   xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+   xhr.onload = function() {
+
+
    var xhr = new XMLHttpRequest();
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {

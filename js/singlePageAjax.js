@@ -1,4 +1,11 @@
+//console.log(articleLoop._id)
+
+   
    var xhr = new XMLHttpRequest();
+     var url = new URLSearchParams(window.location.search); 
+     let id=url.get('id'); 
+      //console.log(id)
+    
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {
        if (this.status == 200) {
@@ -10,18 +17,19 @@
            for (let i in article.docs) {
                var output = '';
                 teste = article.docs[i].tagForArticle
-               console.log(teste)
-               for(let a in teste){
+              // console.log(teste)
+              //console.log(article.docs[i]._id)
+    
 
-               if (teste[a] === 'community') {
-                var arr= teste[a]
-                   console.log(arr)
-               
+               if (id === article.docs[i]._id) {
+                //console.log("its working")
+                
+
 
                    output +=
                        `
       <h1 id="hide">${article.docs[i].title}</span></h1>
-      <img src="${article.docs[i].imgUrl}" id=image_Dog>
+      <img src="${article.docs[i].imgUrl}" id="image_Dog" onclick="teste2()">
       <br/>
       <br/>
       <section id="comment">
@@ -124,11 +132,20 @@
         `
         document.getElementById('article_nutrition').innerHTML = output;
 
-                }
-               }   
+
+                
+
+               }else{
+                console.log("its not working")
+               }
+
            }
 
+
        }
+
+
+
        /*footer += `
            <div class="row s12"  id="First_Block">
      <div class="col s12 m5 l5 red" id="first_col">
@@ -194,5 +211,7 @@
         `
         document.getElementById('footer').innerHTML = footer;*/
    }
+
+
    xhr.send();
 
