@@ -93,7 +93,10 @@
         text-align: center;
         padding: 1em 1.1em;
         text-decoration: none;
-        letter-spacing: 0.048em;
+        letter-spacing: 0.040em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Open Sans';
     }
 
     /* Header - Social media */

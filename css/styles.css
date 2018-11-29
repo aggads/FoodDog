@@ -488,7 +488,7 @@ footer{
     position:relative;
     height:248px;
     max-height:248px;
-    font-size:8px;
+    font-size:11px;
     font-family: 'Open Sans', sans-serif;
     font-weight:900;
     margin-top:30px;
@@ -859,7 +859,7 @@ and (max-device-width : 8000px){
     color: #ff8d6a;
 }#thirdSect .backside .card-title {
     color: #ff8d6a;
-    font-size: 0.5em;
+    font-size: 0.7em;
     margin-top: 2em;
     margin-bottom: 2em;
     font-family: 'Open Sans', sans-serif;
