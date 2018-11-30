@@ -43,7 +43,7 @@
                       <div id="first" class="card md-whiteframe-8dp unify">
 
                        
-                         <a href="singlePage.html?id=${articleLoop[ii]._id}" <img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" ></a>
+                         <a href="singlePage.html?id=${articleLoop[ii]._id}" ><img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" ></a>
                         <div class="card-body ">
                           <h5 class="card-title text-center"><a name="wellness" href="wellness.html">WELLNESS</a></h5>
                           <p id="firsText" class="card-text text-center">${articleLoop[ii].title}</p>
