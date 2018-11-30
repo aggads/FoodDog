@@ -22,12 +22,13 @@
               var lifestyle = '';
               var nutrition = '';
               var footer= '';
-              var articleLoop = article[i]
+              var a;
+              var articleLoop = article[i];
               //console.log(articleLoop)
             for(let ii in articleLoop){
              // console.log(articleLoop[ii].tagForArticle)
               var tags=articleLoop[ii].tagForArticle;
-              for(let a=0;a<tags.length;a++){
+              for(a=0;a<tags.length;a++){
                 const pickTag=tags[a];
               if (pickTag=='wellness') {
                 var arr= pickTag;
