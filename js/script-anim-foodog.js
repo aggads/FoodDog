@@ -19,7 +19,6 @@
       el.ontouchstart = startTouch;
     }
 
-
     TweenMax.fromTo('#first', 2.5, {
       y: -100 // from state
     }, {

@@ -267,7 +267,7 @@ h1{
     background-color: #007b5e;
     border-color: #007b5e;
 }
-section .section-title {
+div .section-title {
     text-align: center;
     color: #007b5e;
     margin-bottom: 50px;
