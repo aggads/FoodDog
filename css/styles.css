@@ -13,7 +13,7 @@ width: 100%;
     text-transform: uppercase;
 }
 a{
-    color: #ff8d6a;
+    color: #D63200;
     background-color: transparent;
     text-decoration: none;  
 }
@@ -131,7 +131,7 @@ h1{
         text-transform: uppercase;    
     }
     .card-title{
-        color: #ff8d6a;
+        color: #D63200;
         font-size: 0.8em;
         margin-top: 2em;
         margin-bottom: 2em;
@@ -149,7 +149,7 @@ h1{
         margin-bottom: 1em!important;   
     }
     #deuxArt>p.card-img{
-        background-color: #ff8d6a;
+        background-color: #D63200;
         display: block;
     }
     .mt-3 {
@@ -244,7 +244,7 @@ h1{
     padding-top: 0.9em;
 }
 .btn-social>:first-child {
-
+    margin-top: 8px;
     width: 22px;
     line-height: 22px;
     font-size: 1.4em;
@@ -471,6 +471,13 @@ footer{
     color:white;
     font-size:12px;
 }
+
+.twittwit1 {
+    background-color: #0b6ab3 !important;
+}
+.twittwit2 {
+    background-color: #0b6ab3 !important;
+}
 #categories{
     position:relative;
     height:248px;
@@ -595,18 +602,18 @@ li{
 }
 #thirdSect .fa-facebook-f {
     margin-left: 0px;
-    color: #ff8d6a;
+    color: #D63200;
 }
 #thirdSect .fa-twitter{
     margin-left: 5px;
-    color: #ff8d6a;
+    color: #D63200;
 }
 #thirdSect .fa-instagram{
     margin-left: 5px;
-    color: #ff8d6a;
+    color: #D63200;
 }
 #thirdSect .backside .card-title {
-    color: #ff8d6a;
+    color: #D63200;
     font-size: 0.75em;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -841,15 +848,15 @@ and (max-device-width : 8000px){
     display: block!important;
 }
 #thirdSect .fa-facebook-f{
-    color: #ff8d6a;
+    color: #D63200;
 }#thirdSect .fa-twitter{
     margin-left: 5px;
-    color: ff8d6a;
+    color: #D63200;
 }#thirdSect .fa-instagram{
     margin-left: 5px;
-    color: #ff8d6a;
+    color: #D63200;
 }#thirdSect .backside .card-title {
-    color: #ff8d6a;
+    color: #D63200;
     font-size: 0.75em;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -952,15 +959,15 @@ and (max-device-width : 8000px){
         display:block;
     }
 }#thirdSect .fa-facebook-f{
-    color: #ff8d6a;
+    color: #ff6c40;
 }#thirdSect .fa-twitter{
     margin-left: 5px;
     color: ff8d6a;
 }#thirdSect .fa-instagram{
     margin-left: 5px;
-    color: #ff8d6a;
+    color: #ff6c40;
 }#thirdSect .backside .card-title {
-    color: #ff8d6a;
+    color: #ff6c40;
     font-size: 0.5em;
     margin-top: 2em;
     margin-bottom: 2em;
