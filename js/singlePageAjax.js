@@ -4,7 +4,7 @@
    var xhr = new XMLHttpRequest();
      var url = new URLSearchParams(window.location.search); 
      let id=url.get('id'); 
-     console.log(id," ",window.location.search)
+    // console.log(id," ",window.location.search)
       //console.log(id)
     
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
@@ -29,8 +29,9 @@
 
                    output +=
                        `
+          <p id="nutrition">${article.docs[i].tagForArticle}</p><br/><br/><br/>
       <h1 id="hide">${article.docs[i].title}</span></h1>
-      <img src="${article.docs[i].imgUrl}" id="image_Dog" onclick="teste2()">
+      <img alt="image" src="${article.docs[i].imgUrl}" id="image_Dog" >
       <br/>
       <br/>
       <section id="comment">
@@ -78,15 +79,15 @@
         <p>YOU MIGHT ALSO LIKE</p><hr/ size="1">
         <div id="Migth_Like_Row">
           <article id="Might_Like_First_Article">
-            <img  alt="Might Like Third Article"  src="${article.docs[i].imgUrl}"/>
+            <img  alt="Might Like Third Article"  src="${article.docs[1].imgUrl}"/>
             <p>SUPERFOODS IN YOUT KITCHEN:<br/>PUMPKINS FOR DOGS</p>
           </article>
           <article id="Might_Like_Second_Article">
-            <img  alt="Might Like Third Article"  src="${article.docs[i].imgUrl}"/>
+            <img  alt="Might Like Third Article"  src="${article.docs[2].imgUrl}"/>
             <p>THE TRUTH ABOUT TABLE SCRAPS<br/>FOR DOGS</p>
           </article>
           <article id="Might_Like_Third_Article">
-            <img  alt="Might Like Third Article"  src="${article.docs[i].imgUrl}"/>
+            <img  alt="Might Like Third Article"  src="${article.docs[3].imgUrl}"/>
             <p>SUPERFOODS IN YOUR KITCHEN:<br/>APPLE CIDER VINEGAR FOR</p>
           </article>
         </div>
@@ -121,9 +122,13 @@
       <section id="leave_comment" class="hide">
         <h3>LEAVE A REPONSE</h3>
         <form>
+           <label for="msg"></label>
           <textarea name="msg" placeholder="Whrite your comment here" id="msg"></textarea>
+           <label for="name"></label>
           <input name="name" type="texte" placeholder="Name..." id="name">
+           <label for="email"></label>
           <input name="email" type="texte" placeholder="Email..." id="email">
+           <label for="website"></label>
           <input name="website" type="texte" placeholder="Website..." id="website"><br/>
           <button>LEAVE A COMMENT</button>
         </form>
@@ -137,7 +142,7 @@
                 
 
                }else{
-                console.log("its not working")
+                //console.log("its not working")
                }
 
            }

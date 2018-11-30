@@ -345,6 +345,11 @@ input::placeholder {
 	background-image: url('/home/crow/Pictures/singlePage.jpeg');
 }*/
 /**Header**/
+p::first-letter{
+	text-transform: uppercase;
+}#nutrition::first-letter{
+	text-transform:uppercase;
+}
 header{
 	position:absolute;
 	top:0;
@@ -359,7 +364,7 @@ header{
 	color:#ff8d6a;
 	font-size:12px;
 	font-weight:900;
-	top:3%;
+	top:4%;
 	margin-top:10px;
 	margin-bottom:10px;
 	position:absolute;
@@ -606,7 +611,7 @@ h1{
 }
 #text_articule{
 	width:99%;
-	height:940px;
+	
 }
 .resume{
 	max-height:940px;
@@ -959,19 +964,19 @@ footer{
 	position:relative;
 	align-self:center;
 	color:white;
-	font-size:10px;
+	font-size:12px;
 }
 .fa-facebook-f{
   position:relative;
   align-self:center;
   color:white;
-  font-size:10px;
+  font-size:12px;
 }
 .fa-instagram{
 	position:relative;
 	align-self:center;
 	color:white;
-	font-size:10px;
+	font-size:12px;
 }
 .fa-sort-up{
 	position:relative;
@@ -982,7 +987,7 @@ footer{
 	position:relative;
 	height:248px;
 	max-height:248px;
-	font-size:8px;
+	font-size:12px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:900;
 	margin-top:30px;
@@ -1024,7 +1029,7 @@ li{
 	position:relative;
 }
 #first_Article a h3{
-	font-size:8px;
+	font-size:12px;
 	color:white;
 	position:relative;
 	margin-top:0px;
@@ -1045,7 +1050,7 @@ li{
   margin-left:-22px;
 }
 #second_Article a h3{
-	font-size:8px;
+	font-size:12px;
 	color:white;
 	position:relative;
 	float:right;
@@ -1302,7 +1307,7 @@ and (max-device-width : 2000px){
 		width:5px;
 		height: 20px;
 	}#nutrition{
-		top:4%;
+		top:6%;
 		font-size:20px!important;
 	}#article_nutrition{
 		margin-top:100px;
