@@ -32,7 +32,7 @@
                 const pickTag=tags[a];
               if (pickTag=='wellness') {
                 var arr= pickTag;
-                console.log(arr)
+               // console.log(arr)
           
                       wellness +=
                        `  <div class="container-fluid">

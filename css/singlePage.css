@@ -65,6 +65,7 @@ h1>a:hover {
     color: rgb(64, 64, 64);
     line-height: 4em;
     text-transform: uppercase;
+    z-index:2;
 }
 
 .menu-hamburger-bacon a:hover {
@@ -347,7 +348,7 @@ input::placeholder {
 /**Header**/
 p::first-letter{
 	text-transform: uppercase;
-}#nutrition::first-letter{
+}#nutrition{
 	text-transform:uppercase;
 }
 header{
@@ -1097,8 +1098,20 @@ and (max-device-width : 650px){
     grid-row-start: 2;
     margin-top: 40px;
     margin-left:8%;
-}#image_Dog{
-	width:100%;
+}.resume{
+	max-width:300px!important
+}.header-grid-container {
+    display: grid;
+    grid-template-rows: 4.0em;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: none;
+    margin-top: -0.2em;
+}.header-middle{
+	display:none;
+}
+#image_Dog{
+	width:320px;
+	height:200px;
 }#mobile{
 		display:block;
 		text-align:center;
@@ -1110,9 +1123,12 @@ and (max-device-width : 650px){
 		font-size:0.7em;
 	}#Might_Like{
 		display:none;
-	}#First_Block{
-		display:none;
-	}#leave_comment h3{
+	}#First_Block {
+    display: block;
+    height: 100px;
+    position: relative;
+}#leave_comment h3{
+	display:none;
 	font-size:30px;
 	font-family: 'Open Sans', sans-serif;
 	color:#111111;
@@ -1128,13 +1144,17 @@ and (max-device-width : 650px){
 }#nutrition{
    font-size:20px;
    margin-top: 12%;
-   left:3%;
+   left:-30%;
 }.button-search{
 	display:block;
 }.logo-farmer{
 	display:none;
-}form{
+}#farmer_dog{
+	margin-right:20px;
+}
+form{
 	font-size:30px;
+	display:none;
 }#leave_comment form input{
 	width:263px;
 }#leave_comment button{
@@ -1142,12 +1162,20 @@ and (max-device-width : 650px){
 	width:263px;
 	font-size:20px;
 }#Social_Network{
-	height:200px;
-}#twitter{
+	height:100px;
+}#third_col{
+	display:none;
+}#Second_Block{
+	display:none;
+}#first_col{
+	display: none;
+}
+
+#twitter{
 	width:50px;
     height:50px;
-    margin-right:60px;
-     right:50%;
+    left: 40%;
+    top: -80%;
 }.fa-twitter{
    font-size:30px;
 }.fa-facebook-f{
@@ -1159,21 +1187,22 @@ and (max-device-width : 650px){
 
 }
 #facebook{
-	width:50px;
-    height:50px;
-    right:45%;
-    margin-left:30px;
-    margin-right:30px;
+	width: 50px;
+    height: 50px;
+    left: 20%;
+    top: -80%;
 }
 #instagram{
 	width:50px;
 	height:50px;
-	right:40%;
+	left: 60%;
+	top:-80%;
 }
 #up{
 	width:50px;
 	height:50px;
 	right:5%;
+	display:none;
 }
 .fa-sort-up{
 	font-size:40px;
@@ -1186,8 +1215,23 @@ and (max-device-width : 650px){
     margin-top:10px;
 }
 	#section_share p{
-	font-size:30px;
-}.menu-logo {
+	font-size:14px;
+	display:none;
+}
+.button-newsletter {
+	display:none;
+}.header-right {
+    left: -70%;
+}#share_Text{
+	display:none;
+}#btn_Comment{
+	position:relative;
+	left:0;
+}#social_network {
+	position:relative;
+	left:0;
+}
+.menu-logo {
     top: 3px;
     position: relative;
     width: 50px;
@@ -1195,19 +1239,17 @@ and (max-device-width : 650px){
     background-color: rgb(64, 64, 64);
     margin: 10px;
 }.header-left h1 {
-    position: absolute;
     margin-top: 12px!important; 
-    left: 40%!important;
-    font-size: 100px;
+    font-size: 50px;
 }
-#section_share button{
-	font-size:25px;
-	width:164px;
-	height:40px;
-	margin-top:35px;
+#section_share button {
+    font-size: 10px;
+    width: 70px;
+    height: 40px;
+    margin-top: 35px;
 }
 #section_share{
-	left:1%;
+	left:-5%;
 }
 #btn_share_facebook .fa-facebook-f{
 	font-size:25px;
@@ -1218,16 +1260,11 @@ and (max-device-width : 650px){
 #btn_share_pinterest .fa-pinterest{
 	font-size:25px;
 }
-.header-left h1{
-	position: absolute;
-	margin-top:4%;
-	left:32%;
-	font-size:100px;
-
-}#Social_Network h1{
+#Social_Network h1{
 		display:block;
 		color:white;
 		margin-top:8%;
+		font-size:26px
 	}header{
 		height:200px;	
 	}.Might_like{
