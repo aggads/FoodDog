@@ -20,7 +20,7 @@
     }
 
 
-    TweenMax.fromTo('#first',  2.5, {
+    TweenMax.fromTo('#first', 2.5, {
       y: -100 // from state
     }, {
       y: 0 // to end state
@@ -40,17 +40,6 @@
           y: 0 // to end state
         });
           
-    
-        
-  
-    
-
-      
-    
-      
- 
-    
-
     TweenMax.fromTo(".image-flip", 2.5, {
       x: -200 // from state
     }, {
