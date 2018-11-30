@@ -118,7 +118,7 @@ h1{
         object-fit: cover!important;
         display: block!important;
     }
-    #container-diogo .card{
+    .container-diogo .card{
         padding-right: -20px;
     }
  
@@ -587,7 +587,7 @@ li{
     margin:1px;
 }
 /*FIN FOOTER*/
-#container-diogo img{
+.container-diogo img{
     width: 100%;
     height: 18vw;
     object-fit: cover;
