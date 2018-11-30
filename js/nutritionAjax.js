@@ -41,7 +41,7 @@
                     
               output +=
                ` <a href="singlePage.html?id=${articleLoop[ii]._id}" ><article class="Article all_Articles">
-        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" onclick="teste(this)"/>
+        <img alt="imgage" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" onclick="teste(this)"/>
         <div class="column">
         <div class="circle"></div>
         <p class="topic">NUTRITION<span>|</span></p>
@@ -69,15 +69,15 @@
           <h3 class="title_footer">POPULAR POSTS</h3>
         </div>
           <article id= "first_Article">
-            <img src="${articleLoop[1].imgUrl}">
+            <img alt="imgage" src="${articleLoop[1].imgUrl}">
             <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
           </article>
           <article id="second_Article">
-            <img src="${articleLoop[2].imgUrl}">
+            <img alt="imgage" src="${articleLoop[2].imgUrl}">
              <h3 id="title_Second_Article"> <a href="#">Top 14 Fresh Snacks for Dogs</a></h3>
           </article>
           <article id="third_Article">
-            <img src="${articleLoop[3].imgUrl}">
+            <img alt="imgage" src="${articleLoop[3].imgUrl}">
             <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs Live Longer</a></h3>
           </article>
       </aside>
