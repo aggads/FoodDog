@@ -69,7 +69,6 @@
           <h3 class="title_footer">POPULAR POSTS</h3>
         </div>
           <article id= "first_Article">
-<<<<<<< HEAD
             <img alt="image" src="${articleLoop[1].imgUrl}">
             <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
           </article>
@@ -80,18 +79,6 @@
           <article id="third_Article">
             <img alt="image" src="${articleLoop[3].imgUrl}">
             <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs</a></h3>
-=======
-            <img alt="imgage" src="${articleLoop[1].imgUrl}">
-            <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
-          </article>
-          <article id="second_Article">
-            <img alt="imgage" src="${articleLoop[2].imgUrl}">
-             <h3 id="title_Second_Article"> <a href="#">Top 14 Fresh Snacks for Dogs</a></h3>
-          </article>
-          <article id="third_Article">
-            <img alt="imgage" src="${articleLoop[3].imgUrl}">
-            <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs Live Longer</a></h3>
->>>>>>> 98ca17abffd6a0ef7930cf17eca05a176f75e524
           </article>
       </aside>
 
