@@ -11,15 +11,15 @@
   <!-- Bootstrap CSS -->
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" defer>
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" defer>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" defer>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet" defer>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" >
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous" media="screen" defer>
+    crossorigin="anonymous" media="screen" >
   <link rel="stylesheet" href="css/styles.css" media="screen" >
-  <link rel="stylesheet" href="css/style-foodog.css" media="screen" defer>
-  <link rel="stylesheet" href="css/style-anim.css" media="screen" defer>
+  <link rel="stylesheet" href="css/style-foodog.css" media="screen" >
+  <link rel="stylesheet" href="css/style-anim.css" media="screen" >
   <meta name="Description" content="A website about dogs and their tasty food">
 
   <title>FooDog</title>
@@ -41,48 +41,6 @@
 </head>
 
 <body>
-  <script type="text/javascript" defer>
-    var close = 0;
-    function menu_mobile() {
-      if (close == 0) {
-        document.getElementById("container_menu_drop").classList.remove("hide1");
-        document.getElementById("container_menu_drop").classList.add("show");
-        document.getElementById("container_menu_drop").classList.remove("hide_Subjets");
-        document.getElementById("container_menu_drop").classList.add("show");
-        close++;
-      } else if (close == 1) {
-        document.getElementById("container_menu_drop").classList.remove("show");
-        document.getElementById("container_menu_drop").classList.add("hide1");
-        document.getElementById("container_menu_drop").classList.remove("show");
-        document.getElementById("container_menu_drop").classList.add("hide_Subjets");
-        close--;
-      }
-    }
-    function fixedHeader() {
-      document.getElementById("mobile_show").classList.remove("masked_loadpage");
-      document.getElementById("mobile_show").classList.add("show_loadpage");
-      document.getElementById("mobile_main").classList.add("masked_loadpage");
-    }
-    function change_post_best() {
-      document.getElementById("firstSect").classList.add("show");
-      document.getElementById("secondSect").classList.add("masked");
-      document.getElementById("thirdSect").classList.add("masked");
-      document.getElementById("secondSect").classList.remove("show");
-      document.getElementById("thirdSect").classList.remove("show");
-    } function change_post_Featured() {
-      document.getElementById("secondSect").classList.add("show");
-      document.getElementById("firstSect").classList.add("masked");
-      document.getElementById("thirdSect").classList.add("masked");
-      document.getElementById("firstSect").classList.remove("show");
-      document.getElementById("thirdSect").classList.remove("show");
-    } function change_post_Latest() {
-      document.getElementById("thirdSect").classList.add("show");
-      document.getElementById("secondSect").classList.add("masked");
-      document.getElementById("firstSect").classList.add("masked");
-      document.getElementById("firstSect").classList.remove("show");
-      document.getElementById("secondSect").classList.remove("show");
-    }
-  </script>
   <main id="mobile_main">
     <section id="first_page_mobile">
       <div id="mobile_main_image"></div>
@@ -636,14 +594,14 @@
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"defer></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"defer></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"defer></script>
       <footer>
         <div class="row s12" id="First_Block">
           <div class="col s12 m5 l5 red" id="first_col">
@@ -721,9 +679,10 @@
         </div>
       </footer>
     </div>
-    <script src="js/script-foodog.js"></script>
-    <script src="js/script-anim-foodog.js"></script>
+    
 
 </body>
+<script src="js/script-foodog.js" defer></script>
+    <script src="js/script-anim-foodog.js"></script>
 
 </html>
