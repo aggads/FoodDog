@@ -3,11 +3,20 @@
  var articleLoop = '';
  var url = new URLSearchParams(window.location.search);
  url = url.get('id');
+
  var  output = '';
  var footer = '';
- var id;    
+ var id;  
+
+
    xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
+
    //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
+   //var targetSinglePage = document.getElementsByClassName("sub_Title"); 
+//var targetSinglePage = document.getElementsByTagName("img");
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
+ // targetSinglePage.onclick =function(){console.log(id)};
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
    xhr.onload = function() {
 
        if (this.status == 200) {
@@ -19,6 +28,7 @@
               articleLoop= article[i]
            
             for(let ii in articleLoop){
+              var target=articleLoop[ii]
                 //console.log(articleLoop[ii].tagForArticle)
                 var tags = articleLoop[ii].tagForArticle;
 
@@ -26,12 +36,12 @@
                 for(let a=0;a<tags.length;a++){
                       var pickTag=tags[a];
                  if (pickTag == 'lifestyle') {
-                  // console.log(articleLoop[ii]._id)
+                   console.log(articleLoop[ii]._id)
                    id=articleLoop[ii]._id;
-              
+                    
               output +=
-               ` <article class="Article all_Articles">
-        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
+               ` <a href="singlePage.html?id=${articleLoop[ii]._id}" ><article class="Article all_Articles">
+        <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" onclick="teste(this)"/>
         <div class="column">
         <div class="circle"></div>
         <p class="topic">LIFESTYLE<span>|</span></p>
@@ -41,16 +51,18 @@
        <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
       </div>
-      </article>
+      </article></a>
       <hr>
         `
          document.getElementById('all_Articles').innerHTML = output;
        }
+
        }
 
 
+
               }
-                           footer += `
+               footer += `
              <aside id="popular_posts">
         
         <div >
@@ -72,7 +84,8 @@
 
         `
         document.getElementById('Second_Block').innerHTML = footer;
-         
+
+              
                }
 
 
@@ -80,7 +93,9 @@
          }
 
 
+
        }
+
 
 function changePage(obj){
     //alert(obj.textContent);
@@ -112,7 +127,7 @@ function changePage(obj){
                    id=articleLoop[ii]._id;
               
               output +=
-               ` <article class="Article all_Articles">
+               ` <a href="singlePage.html?id=${articleLoop[ii]._id}" ><article class="Article all_Articles">
         <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
@@ -123,27 +138,34 @@ function changePage(obj){
        <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
       </div>
-      </article>
+      </article></a>
       <hr>
         `
          document.getElementById('all_Articles').innerHTML = output;
        }
        }
-         }
-         }
-        
 
 
-          
+              }
+           
+
+               }     
          }
 
 
        }
        xhr.send();
-    }
-  xhr.send();
 
-        /* xhr.send();
+    }
+
+  xhr.send();
+//var targetSinglePage = document.getElementsByClassName("sub_Title"); 
+//var targetSinglePage = document.getElementsByTagName("img");
+
+ // targetSinglePage.onclick =function(){console.log(id)};
+  //targetSinglePage.addEventListener("click",function(){console.log(id)})
+       /* 
+        document.getElements
          teste.addEventListener('click',function () {
           console.log(id)
         alert("hello world")},false);*/

@@ -4,6 +4,7 @@
    var xhr = new XMLHttpRequest();
      var url = new URLSearchParams(window.location.search); 
      let id=url.get('id'); 
+     console.log(id," ",window.location.search)
       //console.log(id)
     
    xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);

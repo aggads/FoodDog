@@ -3,16 +3,12 @@
  var articleLoop = '';
  var url = new URLSearchParams(window.location.search);
  url = url.get('id');
+
  var  output = '';
  var footer = '';
  var id;  
- let ii;  
 
- function teste(obj){
-  //id=obj._id;
-  console.log(articleLoop[ii].url)
-                      console.log(id)
-                    }
+
    xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
 
    //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
@@ -44,7 +40,7 @@
                    id=articleLoop[ii]._id;
                     
               output +=
-               ` <article class="Article all_Articles">
+               ` <a href="singlePage.html?id=${articleLoop[ii]._id}" ><article class="Article all_Articles">
         <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" onclick="teste(this)"/>
         <div class="column">
         <div class="circle"></div>
@@ -55,7 +51,7 @@
        <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
       </div>
-      </article>
+      </article></a>
       <hr>
         `
          document.getElementById('all_Articles').innerHTML = output;
@@ -131,7 +127,7 @@ function changePage(obj){
                    id=articleLoop[ii]._id;
               
               output +=
-               ` <article class="Article all_Articles">
+               ` <a href="singlePage.html?id=${articleLoop[ii]._id}" ><article class="Article all_Articles">
         <img alt="img" src="${articleLoop[ii].imgUrl}" width="500px" height="500px" />
         <div class="column">
         <div class="circle"></div>
@@ -142,7 +138,7 @@ function changePage(obj){
        <div class="share_arrow"> <a href="#" name="share"><i class="fas fa-share"></i></a></div><span>SHARE</span>
        </section>
       </div>
-      </article>
+      </article></a>
       <hr>
         `
          document.getElementById('all_Articles').innerHTML = output;

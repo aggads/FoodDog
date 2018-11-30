@@ -3,10 +3,10 @@
   var url = new URLSearchParams(window.location.search);
    url = url.get('id');
   var id;
-    function takeId(){
+    /*function takeId(){
       console.log(id)
        window.location.href =  'singlePage.html?' +'id='+this.id ;
-    }
+    }*/
      xhr.open('GET', 'https://foodog.herokuapp.com/articles?page=${numberForPage}', true);
    //xhr.open('GET', 'https://foodog.herokuapp.com/articles', true);
    xhr.onload = function() {
@@ -43,7 +43,7 @@
                       <div id="first" class="card md-whiteframe-8dp unify">
 
                        
-                          <img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" onclick="takeId()">
+                         <a href="singlePage.html?id=${articleLoop[ii]._id}" <img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" ></a>
                         <div class="card-body ">
                           <h5 class="card-title text-center"><a name="wellness" href="wellness.html">WELLNESS</a></h5>
                           <p id="firsText" class="card-text text-center">${articleLoop[ii].title}</p>
@@ -56,7 +56,7 @@
                 <div id="deuxArt" class="col-lg-6 col-md-8 col-sm-10 ">
                  <div class="card  col-lg-5 col-md-6">
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -64,7 +64,7 @@
                       </div>
                     </div>
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -74,7 +74,7 @@
                   <div class="card  col-lg-5 col-md-6">
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -94,7 +94,7 @@
                   <div class="card  col-lg-5 col-md-6">
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -103,7 +103,7 @@
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -116,7 +116,7 @@
                   <div class="card  col-lg-5 col-md-6">
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -125,7 +125,7 @@
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -152,7 +152,7 @@
                       <div class="card secondPart  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
-                            <a name="single" class="block" href="singlePage.html">
+                            <a name="single" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                               <img src="${articleLoop[ii].imgUrl}" alt="image-dog"></a>
                           </div>
                           <div class="col-md-5   art">
@@ -188,7 +188,7 @@
                       <div class="frontside">
                         <div class="card  ">
                           <div class="card-body text-center">
-                            <p><a name="singlepage" class="block" href="singlePage.html">
+                            <p><a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                                 <img class=" img-fluid" src="${articleLoop[ii].imgUrl}" alt="card image"></a></p>
                             <h4 class="card-title SeCardTitle">NUTRITION</h4>
                             <h5 class="card-title SeCardTitle5">${articleLoop[ii].title}</h5>
@@ -325,7 +325,7 @@ function changePage(obj){
                       <div id="first" class="card md-whiteframe-8dp unify">
 
                        
-                          <img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" onclick="takeId()">
+                         <a href="singlePage.html?id=${articleLoop[ii]._id}" <img alt="card" id="photo" class="card-img-top center-block img-responsive block" src="${articleLoop[ii].imgUrl}" ></a>
                         <div class="card-body ">
                           <h5 class="card-title text-center"><a name="wellness" href="wellness.html">WELLNESS</a></h5>
                           <p id="firsText" class="card-text text-center">${articleLoop[ii].title}</p>
@@ -338,7 +338,7 @@ function changePage(obj){
                 <div id="deuxArt" class="col-lg-6 col-md-8 col-sm-10 ">
                  <div class="card  col-lg-5 col-md-6">
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block"href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -346,7 +346,7 @@ function changePage(obj){
                       </div>
                     </div>
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}" alt="Card image cap"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -365,7 +365,7 @@ function changePage(obj){
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -376,7 +376,7 @@ function changePage(obj){
                   <div class="card  col-lg-5 col-md-6">
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -385,7 +385,7 @@ function changePage(obj){
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -398,7 +398,7 @@ function changePage(obj){
                   <div class="card  col-lg-5 col-md-6">
 
                     <div class="clearfix  md-whiteframe-5dp hidden-xs visible-sm  cardSM">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid  col-sm-5" src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body  col-sm-5">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -407,7 +407,7 @@ function changePage(obj){
                     </div>
 
                     <div class="clearfix md-whiteframe-5dp  hidden-sm">
-                      <a name="singlepage" class="block" href="singlePage.html">
+                      <a name="singlepage" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                         <img alt="card" class="card-img-top img-fluid " src="${articleLoop[ii].imgUrl}"></a>
                       <div class="card-body ">
                         <p class="card-text text-left cardText">${articleLoop[ii].title}</p>
@@ -434,7 +434,7 @@ function changePage(obj){
                       <div class="card secondPart  md-whiteframe-8dp">
                         <div class="row ">
                           <div class="col-md-5 ">
-                            <a name="single" class="block" href="singlePage.html">
+                            <a name="single" class="block" href="singlePage.html?id=${articleLoop[ii]._id}">
                               <img src="${articleLoop[ii].imgUrl}" alt="image-dog"></a>
                           </div>
                           <div class="col-md-5   art">
