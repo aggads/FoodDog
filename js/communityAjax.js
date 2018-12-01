@@ -70,15 +70,15 @@
         </div>
           <article id= "first_Article">
             <img src="${articleLoop[1].imgUrl}">
-            <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
+            <h3 id="title_First_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5bfea336ba190d000499c34c">FooDog</a> </h3>
           </article>
           <article id="second_Article">
             <img src="${articleLoop[2].imgUrl}">
-             <h3 id="title_Second_Article"> <a href="#">Top 14 Fresh Snacks for Dogs</a></h3>
+             <h3 id="title_Second_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5bfea4cbba190d000499c358">Can he be famous</a></h3>
           </article>
           <article id="third_Article">
             <img src="${articleLoop[3].imgUrl}">
-            <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs Live Longer</a></h3>
+            <h3 id="title_Third_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5beea074ac2d370004103969">Why Dogs Live Longer</a></h3>
           </article>
       </aside>
 
@@ -159,16 +159,3 @@ function changePage(obj){
     }
 
   xhr.send();
-//var targetSinglePage = document.getElementsByClassName("sub_Title"); 
-//var targetSinglePage = document.getElementsByTagName("img");
-
- // targetSinglePage.onclick =function(){console.log(id)};
-  //targetSinglePage.addEventListener("click",function(){console.log(id)})
-       /* 
-        document.getElements
-         teste.addEventListener('click',function () {
-          console.log(id)
-        alert("hello world")},false);*/
-
- 
-

@@ -69,16 +69,16 @@
           <h3 class="title_footer">POPULAR POSTS</h3>
         </div>
           <article id= "first_Article">
-            <img alt="image" src="${articleLoop[1].imgUrl}">
-            <h3 id="title_First_Article"> <a href="#">5 Reasons Your Dog is Vomiting</a> </h3>
+            <img src="${articleLoop[1].imgUrl}">
+            <h3 id="title_First_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5bfea336ba190d000499c34c">FooDog</a> </h3>
           </article>
           <article id="second_Article">
-            <img alt="image" src="${articleLoop[2].imgUrl}">
-             <h3 id="title_Second_Article"> <a href="#">Top 14 Fresh Snacks</a></h3>
+            <img src="${articleLoop[2].imgUrl}">
+             <h3 id="title_Second_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5bfea4cbba190d000499c358">Can he be famous</a></h3>
           </article>
           <article id="third_Article">
-            <img alt="image" src="${articleLoop[3].imgUrl}">
-            <h3 id="title_Third_Article"> <a href="#">Why Skinny Dogs</a></h3>
+            <img src="${articleLoop[3].imgUrl}">
+            <h3 id="title_Third_Article"> <a href="https://aggads.github.io/FoodDog/singlePage.html?id=5beea074ac2d370004103969">Why Dogs Live Longer</a></h3>
           </article>
       </aside>
 
